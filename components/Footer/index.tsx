@@ -105,12 +105,12 @@ const Footer = () => {
                 </h2>
                 <ul>
                   <li>
-                    <a
-                      href="/blogs"
+                    <Link
+                      href="/#blog"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Blog
-                    </a>
+                    </Link>
                   </li>
                   {/* <li>
                     <a
@@ -122,7 +122,7 @@ const Footer = () => {
                   </li> */}
                   <li>
                     <a
-                      href="/about"
+                      href="/#services"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       About
@@ -173,20 +173,20 @@ const Footer = () => {
                 </h2>
                 <ul>
                   <li>
-                    <a
-                      href="/contact"
+                    <Link
+                      href="/#contact"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Open Support Ticket
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="/"
+                    <Link
+                      href="/terms"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Terms of Use
-                    </a>
+                    </Link>
                   </li>
                   {/* <li>
                     <a

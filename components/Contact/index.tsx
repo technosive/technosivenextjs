@@ -14,6 +14,8 @@ const Contact = () => {
     message: "",
   };
   const [formData, setFormData] = useState(initialFormData);
+  const [loading, setLoading] = useState(false);
+
   const handleFormSubmit = async () => {
     const phonePattern = /^[0-9]+$/;
     if (formData.name && formData.email) {
@@ -67,6 +69,7 @@ const Contact = () => {
                       </label>
                       <input
                         required
+                        name="name"
                         type="text"
                         placeholder="Enter your name"
                         value={formData.name}
@@ -84,6 +87,8 @@ const Contact = () => {
                         Your Email
                       </label>
                       <input
+                        required
+                        name="email"
                         type="email"
                         placeholder="Enter your email"
                         value={formData.email}
@@ -95,12 +100,13 @@ const Contact = () => {
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
                       <label
-                        htmlFor="name"
+                        htmlFor="phone"
                         className="mb-3 block text-sm font-medium text-dark dark:text-white"
                       >
                         Your Phone Number
                       </label>
                       <input
+                        name="phone"
                         type="text"
                         placeholder="Enter your Phone Number"
                         value={formData.phone}
@@ -112,12 +118,13 @@ const Contact = () => {
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
                       <label
-                        htmlFor="name"
+                        htmlFor="org"
                         className="mb-3 block text-sm font-medium text-dark dark:text-white"
                       >
                         Your Organization
                       </label>
                       <input
+                        name="org"
                         type="text"
                         placeholder="Enter your organization name"
                         value={formData.org}
