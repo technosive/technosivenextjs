@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -138,12 +139,12 @@ const Footer = () => {
                 </h2>
                 <ul>
                   <li>
-                    <a
-                      href="/"
+                    <Link
+                      href="/terms"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      TOS
-                    </a>
+                      Terms of Use
+                    </Link>
                   </li>
                   <li>
                     <a

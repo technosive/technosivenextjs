@@ -1,8 +1,9 @@
 "use client"
+
+import Email from "@/Email";
+import { CONTACT_EMAIL_PAYLOAD } from "@/constants/Contant";
+import { useState } from "react";
 import NewsLatterBox from "./NewsLatterBox";
-import {CONTACT_EMAIL_PAYLOAD} from "@/constants/Contant";
-import {useState} from "react";
-import Email from "@/Email"
 
 const Contact = () => {
   const initialFormData = { name: "", email: "", phone: "", org: "", message: "",};
