@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Email from "@/Email";
 import { CONTACT_EMAIL_PAYLOAD } from "@/constants/Contant";
@@ -6,27 +6,32 @@ import { useState } from "react";
 import NewsLatterBox from "./NewsLatterBox";
 
 const Contact = () => {
-  const initialFormData = { name: "", email: "", phone: "", org: "", message: "",};
+  const initialFormData = {
+    name: "",
+    email: "",
+    phone: "",
+    org: "",
+    message: "",
+  };
   const [formData, setFormData] = useState(initialFormData);
   const handleFormSubmit = async () => {
     const phonePattern = /^[0-9]+$/;
-    if ( formData.name && formData.email) {
+    if (formData.name && formData.email) {
       const payload = CONTACT_EMAIL_PAYLOAD(formData);
       console.log("sending mail...");
-      const res = Email.prototype.sendEmail(payload)
-      if(res) {
+      const res = Email.prototype.sendEmail(payload);
+      if (res) {
         console.log("Email sent.");
         setFormData(initialFormData);
-      } else console.log("Email not sent.")
-
+      } else console.log("Email not sent.");
     } else {
-      console.log("Form validation failed.")
+      console.log("Form validation failed.");
       // setBlankText(`${jsonData.Contact["Blank-Text"].Before}`);
       // setColorRed(true);
     }
   };
 
-  const handleInputChange = (e: { target: { name: any; value: any; }; }) => {
+  const handleInputChange = (e: { target: { name: any; value: any } }) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -140,7 +145,10 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="w-full px-4">
-                    <button onClick={handleFormSubmit} className="rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark">
+                    <button
+                      onClick={handleFormSubmit}
+                      className="rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark"
+                    >
                       Submit
                     </button>
                   </div>

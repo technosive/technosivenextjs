@@ -147,20 +147,20 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <a
-                      href="/"
+                    <Link
+                      href="/privacy-policy"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Privacy Policy
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="/"
+                    <Link
+                      href="/anti-slavery-policy"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Modern Anti-Slavery Policy
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

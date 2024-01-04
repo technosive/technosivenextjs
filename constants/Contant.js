@@ -138,6 +138,7 @@ export const CHATBOT_PAYLOAD = (formData) => ({
 });
 
 export const baseEmailUrl = {
-  production: false,
-  url: production?"https://technowallet.io/sendEmail":"http://localhost:3003/sendEmail",
+  url: production
+    ? "https://technowallet.io/sendEmail"
+    : "http://localhost:3003/sendEmail",
 };

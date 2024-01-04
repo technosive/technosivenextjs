@@ -1,3 +1,4 @@
+import Title from "@/components/Common/Section Title Common/Title";
 import SectionTitle from "@/components/Common/SectionTitle";
 import { Metadata } from "next";
 
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
   // other metadata
 };
 
-const BlogDetailsPage = () => {
+const Terms = () => {
   return (
     <>
       <section className="pb-[120px] pt-[150px]">
@@ -16,9 +17,7 @@ const BlogDetailsPage = () => {
             <div className="w-full px-4 lg:w-10/12">
               <div>
                 <div>
-                  {/* <h2 className="mb-7 text-5xl font-bold dark:text-white">
-                    Terms of Use
-                  </h2> */}
+                  <Title title="Terms Of Use" center />
 
                   <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
                     Last Updated: 4 Jan 2024
@@ -170,4 +169,4 @@ const BlogDetailsPage = () => {
   );
 };
 
-export default BlogDetailsPage;
+export default Terms;

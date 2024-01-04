@@ -1,3 +1,4 @@
+import Paragraph from "./Section Title Common/Paragraph";
 import Title from "./Section Title Common/Title";
 
 const SectionTitle = ({
@@ -21,9 +22,7 @@ const SectionTitle = ({
         style={{ maxWidth: width, marginBottom: mb }}
       >
         <Title title={title} />
-        <p className="text-base !leading-relaxed text-body-color md:text-lg">
-          {paragraph}
-        </p>
+        <Paragraph paragraph={paragraph} />
       </div>
     </>
   );
