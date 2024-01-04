@@ -1,6 +1,48 @@
 import NewsLatterBox from "./NewsLatterBox";
+import baseEmailUrl from "../../constants/Contant";
+import {useState} from "react";
 
 const Contact = () => {
+  const baseServerURL = baseEmailUrl.url
+  const initialFormData = {
+    name: "",
+    phone: "",
+    email: "",
+    org: "",
+    message: "",
+  };
+  const [formData, setFormData] = useState(initialFormData);
+  const handleFormSubmit = async () => {
+    // console.log("formData", formData);
+    const phonePattern = /^[0-9]+$/;
+    if (
+        formData.name &&
+        formData.phone &&
+        formData.email &&
+        formData.org &&
+        formData.message
+    ) {
+      const payload = Constants.EMAIL_PAYLOAD(formData);
+      // console.log("sending mail...");
+
+      await axios
+          .post(baseURL, payload)
+          .then(() => {
+            setIsLoading(false);
+            // console.log("Email Sent.");
+            setFormData(initialFormData);
+            setBlankText(`${jsonData.Contact["Blank-Text"].After}`);
+            setColorRed(false);
+          })
+          .catch(() => {
+            console.error("Email not Sent.");
+          });
+    } else {
+      setBlankText(`${jsonData.Contact["Blank-Text"].Before}`);
+      setColorRed(true);
+    }
+  };
+
   return (
     <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
       <div className="container">
