@@ -1,46 +1,36 @@
+"use client"
 import NewsLatterBox from "./NewsLatterBox";
-import baseEmailUrl from "../../constants/Contant";
+import {CONTACT_EMAIL_PAYLOAD} from "@/constants/Contant";
 import {useState} from "react";
+import Email from "@/Email"
 
 const Contact = () => {
-  const baseServerURL = baseEmailUrl.url
-  const initialFormData = {
-    name: "",
-    phone: "",
-    email: "",
-    org: "",
-    message: "",
-  };
+  const initialFormData = { name: "", email: "", phone: "", org: "", message: "",};
   const [formData, setFormData] = useState(initialFormData);
   const handleFormSubmit = async () => {
-    // console.log("formData", formData);
     const phonePattern = /^[0-9]+$/;
-    if (
-        formData.name &&
-        formData.phone &&
-        formData.email &&
-        formData.org &&
-        formData.message
-    ) {
-      const payload = Constants.EMAIL_PAYLOAD(formData);
-      // console.log("sending mail...");
+    if ( formData.name && formData.email) {
+      const payload = CONTACT_EMAIL_PAYLOAD(formData);
+      console.log("sending mail...");
+      const res = Email.prototype.sendEmail(payload)
+      if(res) {
+        console.log("Email sent.");
+        setFormData(initialFormData);
+      } else console.log("Email not sent.")
 
-      await axios
-          .post(baseURL, payload)
-          .then(() => {
-            setIsLoading(false);
-            // console.log("Email Sent.");
-            setFormData(initialFormData);
-            setBlankText(`${jsonData.Contact["Blank-Text"].After}`);
-            setColorRed(false);
-          })
-          .catch(() => {
-            console.error("Email not Sent.");
-          });
     } else {
-      setBlankText(`${jsonData.Contact["Blank-Text"].Before}`);
-      setColorRed(true);
+      console.log("Form validation failed.")
+      // setBlankText(`${jsonData.Contact["Blank-Text"].Before}`);
+      // setColorRed(true);
     }
+  };
+
+  const handleInputChange = (e: { target: { name: any; value: any; }; }) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
   };
 
   return (
@@ -73,6 +63,8 @@ const Contact = () => {
                         required
                         type="text"
                         placeholder="Enter your name"
+                        value={formData.name}
+                        onChange={handleInputChange}
                         className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                       />
                     </div>
@@ -88,6 +80,8 @@ const Contact = () => {
                       <input
                         type="email"
                         placeholder="Enter your email"
+                        value={formData.email}
+                        onChange={handleInputChange}
                         className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                       />
                     </div>
@@ -103,6 +97,8 @@ const Contact = () => {
                       <input
                         type="text"
                         placeholder="Enter your Phone Number"
+                        value={formData.phone}
+                        onChange={handleInputChange}
                         className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                       />
                     </div>
@@ -118,6 +114,8 @@ const Contact = () => {
                       <input
                         type="text"
                         placeholder="Enter your organization name"
+                        value={formData.org}
+                        onChange={handleInputChange}
                         className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                       />
                     </div>
@@ -134,12 +132,14 @@ const Contact = () => {
                         name="message"
                         rows={5}
                         placeholder="Enter your Message"
+                        value={formData.message}
+                        onChange={handleInputChange}
                         className="w-full resize-none rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                       ></textarea>
                     </div>
                   </div>
                   <div className="w-full px-4">
-                    <button className="rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark">
+                    <button onClick={handleFormSubmit} className="rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark">
                       Submit
                     </button>
                   </div>
