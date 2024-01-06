@@ -98,7 +98,6 @@ const NewsLatterBox = () => {
         />
         <button
           type="submit"
-          onClick={handleFormSubmit}
           className="mb-5 flex w-full cursor-pointer items-center justify-center rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark"
         >
           {loading ? "Subscribing.." : "Subscribe"}
