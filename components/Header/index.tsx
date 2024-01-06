@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
@@ -37,7 +38,6 @@ const Header = () => {
   };
 
   const usePathName = usePathname();
-
   return (
     <>
       <header

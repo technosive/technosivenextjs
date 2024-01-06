@@ -5,7 +5,7 @@ import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 const Hero = () => {
   const [textAnimation] = useTypewriter({
-    words: ["Innovation...", "Transformation..."],
+    words: ["Innovation", "Transformation"],
     loop: true,
     typeSpeed: 90,
     delaySpeed: 600,

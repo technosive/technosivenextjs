@@ -1,28 +1,62 @@
 "use client";
 
-import { baseEmailUrl, SUBSCRIBE_EMAIL_PAYLOAD } from "@/constants/Contant";
-import Email from "@/Email";
+import axios from "axios";
 import { useTheme } from "next-themes";
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const NewsLatterBox = () => {
-  const { theme } = useTheme();
   const initialFormData = { name: "", email: "" };
   const [formData, setFormData] = useState(initialFormData);
-  const handleFormSubmit = async () => {
-    if (formData.name && formData.email) {
-      const payload = SUBSCRIBE_EMAIL_PAYLOAD(formData);
-      console.log("sending mail...");
-      const res = Email.prototype.sendEmail(payload);
-      if (res) {
-        console.log("Email sent.");
+  const [loading, setLoading] = useState(false);
+
+  const { theme, setTheme } = useTheme();
+
+  const handleFormSubmit = (e: any) => {
+    e.preventDefault();
+    setLoading(true);
+
+    axios
+      .post(
+        "/api/sendEmail",
+        {
+          name: formData.name,
+          email: formData.email,
+          subscriber: true,
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        },
+      )
+      .then((response) => {
         setFormData(initialFormData);
-      } else console.log("Email not sent.");
-    } else {
-      console.log("Form validation failed.");
-      // setBlankText(`${jsonData.Contact["Blank-Text"].Before}`);
-      // setColorRed(true);
-    }
+        setLoading(false);
+        toast.success("Subscribed Successfully!", {
+          position: "bottom-center",
+          autoClose: 4000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: theme == "dark" ? "dark" : "light",
+        });
+      })
+      .catch((error) => {
+        toast.error("Internal Server Error", {
+          position: "bottom-center",
+          autoClose: 4000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: theme == "dark" ? "dark" : "light",
+        });
+      });
   };
 
   const handleInputChange = (e: { target: { name: any; value: any } }) => {
@@ -38,14 +72,12 @@ const NewsLatterBox = () => {
       className="wow fadeInUp relative z-10 h-[97%] rounded-sm bg-white p-8 shadow-three dark:bg-gray-dark sm:p-11 lg:p-8 xl:p-11"
       data-wow-delay=".2s"
     >
+      <ToastContainer />
       <h3 className="mb-4 text-2xl font-bold leading-tight text-black dark:text-white">
         Subscribe to receive future updates
       </h3>
-      <p className="mb-11 border-b border-body-color border-opacity-25 pb-11 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-25">
-        Lorem ipsum dolor sited Sed ullam corper consectur adipiscing Mae ornare
-        massa quis lectus.
-      </p>
-      <div>
+      <p className="mb-11 border-b border-body-color border-opacity-25 pb-11 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-25"></p>
+      <form onSubmit={handleFormSubmit}>
         <input
           required
           type="text"
@@ -65,16 +97,17 @@ const NewsLatterBox = () => {
           className="mb-4 w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
         />
         <button
+          type="submit"
           onClick={handleFormSubmit}
           className="mb-5 flex w-full cursor-pointer items-center justify-center rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark"
         >
-          Subscribe
+          {loading ? "Subscribing.." : "Subscribe"}
         </button>
         <p className="text-center text-base leading-relaxed text-body-color dark:text-body-color-dark">
           We ensure a spam-free environment. Kindly refrain from submitting
           dummy email IDs.
         </p>
-      </div>
+      </form>
 
       <div>
         <span className="absolute left-2 top-7">

@@ -24,7 +24,7 @@ const AboutSectionOne = () => {
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="Elevating Business Excellence through Smart IoT Solutions."
+                title="Excellence through Smart IoT Solutions."
                 paragraph="Pioneering solutions with in-house expertise in hardware, SaaS, and Big Data. As proprietors of the Orion IoT communications network, we provide clients with cutting-edge, end-to-end solutions tailored to their unique needs."
                 mb="44px"
               />
@@ -62,13 +62,13 @@ const AboutSectionOne = () => {
                   src="/images/about/about-image.svg"
                   alt="about-image"
                   fill
-                  className="drop-shadow-three mx-auto max-w-full dark:hidden dark:drop-shadow-none lg:mr-0"
+                  className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0"
                 />
                 <Image
                   src="/images/about/about-image-dark.svg"
                   alt="about-image"
                   fill
-                  className="drop-shadow-three mx-auto hidden max-w-full dark:block dark:drop-shadow-none lg:mr-0"
+                  className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0"
                 />
               </div>
             </div>

@@ -1,8 +1,10 @@
 "use client";
 
-import Email from "@/Email";
-import { CONTACT_EMAIL_PAYLOAD } from "@/constants/Contant";
+import axios from "axios";
+import { useTheme } from "next-themes";
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import NewsLatterBox from "./NewsLatterBox";
 
 const Contact = () => {
@@ -16,21 +18,54 @@ const Contact = () => {
   const [formData, setFormData] = useState(initialFormData);
   const [loading, setLoading] = useState(false);
 
-  const handleFormSubmit = async () => {
-    const phonePattern = /^[0-9]+$/;
-    if (formData.name && formData.email) {
-      const payload = CONTACT_EMAIL_PAYLOAD(formData);
-      console.log("sending mail...");
-      const res = Email.prototype.sendEmail(payload);
-      if (res) {
-        console.log("Email sent.");
+  const { theme, setTheme } = useTheme();
+  const handleFormSubmit = (e: any) => {
+    e.preventDefault();
+    setLoading(true);
+
+    axios
+      .post(
+        "/api/sendEmail",
+        {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          org: formData.org,
+          message: formData.message,
+          subscriber: false,
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        },
+      )
+      .then((response) => {
         setFormData(initialFormData);
-      } else console.log("Email not sent.");
-    } else {
-      console.log("Form validation failed.");
-      // setBlankText(`${jsonData.Contact["Blank-Text"].Before}`);
-      // setColorRed(true);
-    }
+        setLoading(false);
+        toast.success("Email Sent Successfully!", {
+          position: "bottom-center",
+          autoClose: 4000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: theme == "dark" ? "dark" : "light",
+        });
+      })
+      .catch((error) => {
+        toast.error("Internal Server Error", {
+          position: "bottom-center",
+          autoClose: 4000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: theme == "dark" ? "dark" : "light",
+        });
+      });
   };
 
   const handleInputChange = (e: { target: { name: any; value: any } }) => {
@@ -43,6 +78,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
+      <ToastContainer />
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
@@ -57,7 +93,7 @@ const Contact = () => {
               <p className="mb-12 text-base font-medium text-body-color">
                 Our support team will get back to you ASAP via email.
               </p>
-              <form>
+              <form onSubmit={handleFormSubmit}>
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
@@ -153,10 +189,11 @@ const Contact = () => {
                   </div>
                   <div className="w-full px-4">
                     <button
-                      onClick={handleFormSubmit}
+                      type="submit"
+                      // onClick={handleFormSubmit}
                       className="rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark"
                     >
-                      Submit
+                      {loading ? "Submitting..." : "Submit"}
                     </button>
                   </div>
                 </div>
