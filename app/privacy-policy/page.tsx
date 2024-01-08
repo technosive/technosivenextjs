@@ -65,11 +65,11 @@ const PrivacyPolicy = () => {
                     Introduction:
                   </h3>
                   <p className="mb-7 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    This Privacy Policy outlines how Technosive ("we," "us," or
+                    {` This Privacy Policy outlines how Technosive ("we," "us," or
                     "our") collects, uses, and protects your personal
                     information when you visit our website or subscribe to our
                     newsletter, in full compliance with the UK Data Protection
-                    Act 2018 and the General Data Protection Regulation (GDPR).
+                    Act 2018 and the General Data Protection Regulation (GDPR).`}
                   </p>
 
                   <h3 className="font-xl mb-4 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">

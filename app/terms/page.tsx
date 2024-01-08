@@ -27,10 +27,10 @@ const Terms = () => {
                     <strong className="text-primary dark:text-white">
                       Technosive!
                     </strong>{" "}
-                    These Terms of Use ("Terms") govern your access to and use
+                    {`These Terms of Use ("Terms") govern your access to and use
                     of the Technosive website ("Website") and any content,
                     features, or services provided by Technosive, whether as a
-                    guest or a registered user.
+                    guest or a registered user.`}
                   </p>
 
                   <p className="mb-7 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
@@ -47,10 +47,10 @@ const Terms = () => {
                   </p>
 
                   <p className="mb-7 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Use of the Website: You agree to use the Website for lawful
+                    {`Use of the Website: You agree to use the Website for lawful
                     purposes and in a way that does not infringe on the rights
                     of others or restrict or inhibit anyone else's use and
-                    enjoyment of the Website.
+                    enjoyment of the Website.`}
                   </p>
 
                   <p className="mb-7 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
@@ -99,8 +99,8 @@ const Terms = () => {
                       consent.
                     </li>
                     <li className="mb-2 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg">
-                      To engage in any conduct that restricts or inhibits
-                      anyone's use or enjoyment of the Website.
+                      {`To engage in any conduct that restricts or inhibits
+                      anyone's use or enjoyment of the Website.`}
                     </li>
                     <li className="mb-2 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg">
                       To impersonate or attempt to impersonate Technosive, a
@@ -116,11 +116,11 @@ const Terms = () => {
                     and use of the Website.
                   </p>
                   <p className="mb-7 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Disclaimer of Warranties: The Website is provided "as is"
+                    {`Disclaimer of Warranties: The Website is provided "as is"
                     and "as available" without any warranties of any kind,
                     either expressed or implied, including but not limited to
                     the implied warranties of merchantability, fitness for a
-                    particular purpose, or non infringement.
+                    particular purpose, or non infringement.`}
                   </p>
                   <p className="mb-7 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
                     Limitation of Liability: To the fullest extent permitted by
