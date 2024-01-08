@@ -16,7 +16,7 @@ export async function POST(request) {
       await request.json();
 
     const smtpTransport = nodemailer.createTransport({
-      service: "gmail",
+      service: process.env.HOST,
       auth: {
         user: process.env.SENDER_EMAIL_ADDRESS,
         pass: process.env.SENDER_EMAIL_PASSWORD,
@@ -25,7 +25,7 @@ export async function POST(request) {
 
     const mailOptions = {
       from: process.env.SENDER_EMAIL_ADDRESS,
-      to: process.env.RECEIVE_EMAIL_ADDRESS,
+      to: process.env.RECEIVER_EMAIL_ADDRESS,
       subject: "Lead via Email",
       html: `${
         subscriber
