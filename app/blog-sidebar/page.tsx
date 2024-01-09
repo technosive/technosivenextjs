@@ -33,6 +33,7 @@ const BlogSidebarPage = () => {
                             src="/images/blog/author-02.png"
                             alt="author"
                             fill
+                            unoptimized
                           />
                         </div>
                       </div>

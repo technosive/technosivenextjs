@@ -30,6 +30,7 @@ const BlogDetailsPage = () => {
                             src="/images/blog/author-02.png"
                             alt="author"
                             fill
+                            unoptimized
                           />
                         </div>
                       </div>
@@ -103,7 +104,7 @@ const BlogDetailsPage = () => {
                 </div>
                 <div>
                   <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                  In an interconnected world where data breaches and cyberattacks are becoming more sophisticated, security can no longer be an afterthought. Enter the concept of “Secure by Design,” a proactive approach to creating software, systems, and products with security as a foundational element. In this blog, we’ll dive into what Secure by Design entails, its core principles, and why it’s a crucial mindset for today’s digital landscape.
+                    In an interconnected world where data breaches and cyberattacks are becoming more sophisticated, security can no longer be an afterthought. Enter the concept of “Secure by Design,” a proactive approach to creating software, systems, and products with security as a foundational element. In this blog, we’ll dive into what Secure by Design entails, its core principles, and why it’s a crucial mindset for today’s digital landscape.
                   </p>
                   <div className="mb-10 w-full overflow-hidden rounded">
                     <div className="relative aspect-[97/60] w-full sm:aspect-[97/44]">
@@ -112,16 +113,17 @@ const BlogDetailsPage = () => {
                         alt="image"
                         fill
                         className="object-cover object-center"
+                        unoptimized
                       />
                     </div>
                   </div>
                   <p className="mb-8 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                  Secure by Design is a philosophy that emphasizes incorporating security measures 
-                  into the very architecture and design of a system from the ground up. Rather than adding security features as an afterthought or trying to patch vulnerabilities post-development, Secure by Design advocates for building security into every layer and component of a solution. This approach reduces the potential attack surface and minimizes the risk of exploitation.
+                    Secure by Design is a philosophy that emphasizes incorporating security measures
+                    into the very architecture and design of a system from the ground up. Rather than adding security features as an afterthought or trying to patch vulnerabilities post-development, Secure by Design advocates for building security into every layer and component of a solution. This approach reduces the potential attack surface and minimizes the risk of exploitation.
                     <strong className="text-primary dark:text-white">
-                    architecture and design
+                      architecture and design
                     </strong>
-                    
+
                   </p>
                   <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
                     Semper auctor neque vitae tempus quam pellentesque nec.
