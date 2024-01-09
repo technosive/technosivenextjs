@@ -24,7 +24,6 @@ export default function RootLayout({
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       {/* <head /> */}
-
       <GoogleAnalytics GA_MEASUREMENT_ID="G-9M37LG3Q45" />
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
         <Providers>

@@ -67,8 +67,10 @@ const Footer = () => {
                     </svg>
                   </a>
                   <a
-                    href="/"
+                    href="https://www.youtube.com/channel/UCdmkGxIY0oi5x1PX3Ycjgxw"
+                    target="_blank"
                     aria-label="social-link"
+                    rel="noreferrer"
                     className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >
                     <svg
@@ -81,8 +83,10 @@ const Footer = () => {
                     </svg>
                   </a>
                   <a
-                    href="/"
+                    href="https://www.linkedin.com/company/technosive"
+                    target="_blank"
                     aria-label="social-link"
+                    rel="noreferrer"
                     className="text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                   >
                     <svg
@@ -174,7 +178,9 @@ const Footer = () => {
                 <ul>
                   <li>
                     <Link
-                      href="/#contact"
+                      href="https://support.technosive.co.uk/"
+                      target="_blank"
+                      rel="noreferrer"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Open Support Ticket

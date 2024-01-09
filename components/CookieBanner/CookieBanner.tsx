@@ -1,6 +1,7 @@
 'use client';
 
 import { getLocalStorage, getLocalStoragePopUp, setLocalStorage } from '@/lib/storageHelper';
+import { useTheme } from 'next-themes';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
@@ -8,6 +9,7 @@ export default function CookieBanner() {
 
     const [cookieConsent, setCookieConsent] = useState(getLocalStorage("cookie_consent", false));
     const [popUp, setPopUp] = useState(getLocalStoragePopUp("cookie_consent", true));
+
 
     useEffect(() => {
         const newValue = cookieConsent ? 'granted' : 'denied'
@@ -22,8 +24,8 @@ export default function CookieBanner() {
     return (
         <div className={`my-10 mx-auto max-w-max md:max-w-screen-sm
                         fixed bottom-0 left-0 right-0 
-                      ${!popUp ? "hidden" : "flex"} px-3 md:px-4 py-3 justify-between items-center flex-col sm:flex-row gap-4  
-                         bg-gray-700 rounded-lg shadow z-50`}>
+                      ${!popUp ? "hidden" : "flex"} px-3 md:px-4 py-3 justify-between items-center flex-col sm:flex-row gap-4 bg-gray-700 text-white
+                          rounded-lg shadow z-50`}>
 
             <div className='text-center'>
                 <Link href="/privacy-policy"><p>We use <span className='font-bold text-primary'>cookies</span> on our site.</p></Link>
