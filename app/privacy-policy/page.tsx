@@ -236,17 +236,19 @@ const PrivacyPolicy = () => {
                     email.
                   </p>
 
-                  <h3 className="font-xl mb-4 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
-                    Cookies and Tracking Technologies:
-                  </h3>
-                  <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    We may use cookies and other tracking technologies to
-                    collect information about your use of our website, such as
-                    session cookies and persistent cookies. You can control the
-                    use of cookies by adjusting your browser settings. However,
-                    disabling cookies may limit your ability to use certain
-                    features of our website.
-                  </p>
+                  <div id="cookie-policy">
+                    <h3 className="font-xl mb-4 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
+                      Cookies and Tracking Technologies:
+                    </h3>
+                    <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
+                      We may use cookies and other tracking technologies to
+                      collect information about your use of our website, such as
+                      session cookies and persistent cookies. You can control the
+                      use of cookies by adjusting your browser settings. However,
+                      disabling cookies may limit your ability to use certain
+                      features of our website.
+                    </p>
+                  </div>
 
                   <h3 className="font-xl mb-4 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
                     Changes to this Privacy Policy:

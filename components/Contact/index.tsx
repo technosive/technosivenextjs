@@ -178,6 +178,7 @@ const Contact = () => {
                         Your Message
                       </label>
                       <textarea
+                        required
                         name="message"
                         rows={5}
                         placeholder="Enter your Message"

@@ -1,11 +1,14 @@
 "use client";
 
+import CookieBanner from "@/components/CookieBanner/CookieBanner";
 import Footer from "@/components/Footer";
+import GoogleAnalytics from "@/components/GoogleAnalytics/GoogleAnalytics";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Inter } from "next/font/google";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
+import { Providers } from "./providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,8 +23,9 @@ export default function RootLayout({
         <head /> will contain the components returned by the nearest parent
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
-      <head />
+      {/* <head /> */}
 
+      <GoogleAnalytics GA_MEASUREMENT_ID="G-0000000000" />
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
         <Providers>
           <Header />
@@ -29,9 +33,9 @@ export default function RootLayout({
           <Footer />
           <ScrollToTop />
         </Providers>
+        <CookieBanner />
       </body>
     </html>
   );
 }
 
-import { Providers } from "./providers";

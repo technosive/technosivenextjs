@@ -17,6 +17,7 @@ export async function POST(request) {
 
     const smtpTransport = nodemailer.createTransport({
       service: process.env.HOST,
+      port: process.env.PORT,
       auth: {
         user: process.env.SENDER_EMAIL_ADDRESS,
         pass: process.env.SENDER_EMAIL_PASSWORD,
@@ -26,7 +27,7 @@ export async function POST(request) {
     const mailOptions = {
       from: process.env.SENDER_EMAIL_ADDRESS,
       to: process.env.RECEIVER_EMAIL_ADDRESS,
-      subject: "Lead via Email",
+      subject: "Lead From Website",
       html: `${
         subscriber
           ? `

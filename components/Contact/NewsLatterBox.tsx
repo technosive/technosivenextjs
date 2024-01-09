@@ -2,9 +2,11 @@
 
 import axios from "axios";
 import { useTheme } from "next-themes";
+import Link from "next/link";
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
 
 const NewsLatterBox = () => {
   const initialFormData = { name: "", email: "" };
@@ -104,9 +106,10 @@ const NewsLatterBox = () => {
         </button>
         <p className="text-center text-base leading-relaxed text-body-color dark:text-body-color-dark">
           We ensure a spam-free environment. Kindly refrain from submitting
-          dummy email IDs.
+          dummy email IDs. Our <Link href="/privacy-policy" className="hover:underline text-primary">privacy-policy</Link>
         </p>
       </form>
+
 
       <div>
         <span className="absolute left-2 top-7">
