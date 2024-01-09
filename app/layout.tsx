@@ -25,7 +25,7 @@ export default function RootLayout({
       */}
       {/* <head /> */}
 
-      <GoogleAnalytics GA_MEASUREMENT_ID="G-0000000000" />
+      <GoogleAnalytics GA_MEASUREMENT_ID="G-9M37LG3Q45" />
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
         <Providers>
           <Header />
