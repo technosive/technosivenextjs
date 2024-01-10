@@ -24,10 +24,13 @@ const Hero = () => {
                 className="wow fadeInUp mx-auto max-w-[900px]"
                 data-wow-delay=".2s"
               >
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Your Partner for {textAnimation} <Cursor cursorStyle="|" />
+                <h1 className="mb-5 text-3xl text-center flex flex-col sm:flex-row sm:text-left sm:gap-x-4 font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
+                  Your Partner for
+                  <span>
+                    {textAnimation} <Cursor cursorStyle="|" />
+                  </span>
                 </h1>
-                <p className="mb-12 text-center text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
+                <p className="mb-12 text-center text-sm !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
                   We are dedicated to pioneering solutions that transcend
                   boundaries and redefine industries. With a passion for
                   cutting-edge technology, we embark on a journey to empower
