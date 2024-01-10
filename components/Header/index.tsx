@@ -1,8 +1,8 @@
 "use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
@@ -105,6 +105,7 @@ const Header = () => {
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
+                            onClick={navbarToggleHandler}
                             className={`flex py-2 text-base transition-all hover:text-primary lg:mr-0 lg:inline-flex lg:px-0 lg:py-6`}
                           >
                             {menuItem.title}
