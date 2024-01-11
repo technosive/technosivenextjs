@@ -36,6 +36,3 @@ html {
     @apply opacity-100;
   }
 }
-body {
-  scroll-behavior: smooth;
-}

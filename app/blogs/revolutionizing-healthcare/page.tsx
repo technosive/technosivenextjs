@@ -28,7 +28,7 @@ const BlogDetailsPage = () => {
                       <div className="mr-4">
                         <div className="relative h-10 w-10 overflow-hidden rounded-full">
                           <Image
-                            src="/images/blog/revolutionizing-healthcare/author.jpg"
+                            src="/images/blog/revolutionizing-healthcare/author.webp"
                             alt="author"
                             fill
                             unoptimized
@@ -109,7 +109,7 @@ const BlogDetailsPage = () => {
                   <div className="mb-10 w-full overflow-hidden rounded">
                     <div className="relative aspect-[97/60] w-full sm:aspect-[97/44]">
                       <Image
-                        src="/images/blog/revolutionizing-healthcare/160.jpg"
+                        src="/images/blog/revolutionizing-healthcare/160.webp"
                         alt="image"
                         fill
                         className="object-cover object-center"
@@ -359,9 +359,10 @@ const BlogDetailsPage = () => {
                         Popular Tags :
                       </h4>
                       <div className="flex items-center">
-                        <TagButton text="Design" />
-                        <TagButton text="Development" />
-                        <TagButton text="Info" />
+                        <TagButton text="#HealthcareRevolution" />
+                        <TagButton text="#FutureOfHealth" />
+                        <TagButton text="#IoTinHealthcare" />
+                        <TagButton text="#WellnessTech" />
                       </div>
                     </div>
                     <div className="mb-5">

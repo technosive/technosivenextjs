@@ -55,10 +55,10 @@ const Header = () => {
                   } `}
               >
                 <Image
-                  src="/images/logo/Techno.png"
+                  src="/images/logo/Techno.webp"
                   alt="logo"
                   width={140}
-                  height={30}
+                  height={79}
                   className="w-full dark:hidden"
                   unoptimized
                 />
@@ -66,7 +66,7 @@ const Header = () => {
                   src="/images/logo/logo.svg"
                   alt="logo"
                   width={140}
-                  height={30}
+                  height={79}
                   className="hidden w-full dark:block"
                 />
               </Link>
