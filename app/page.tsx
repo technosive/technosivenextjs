@@ -16,8 +16,7 @@ const ScrollUp = dynamic(() => import('@/components/Common/ScrollUp'))
 
 export const metadata: Metadata = {
   title: "Technosive | Your Partner for Innovation & Transformation",
-  description: "This is Home for Technosive Website",
-  // other metadata
+  description: "Welcome to Technosive, where innovation meets transformation. As your dedicated partner in progress, we specialize in pioneering solutions that drive innovation and usher in transformative changes.",
 };
 
 export default function Home() {

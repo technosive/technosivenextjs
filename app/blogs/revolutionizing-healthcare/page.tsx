@@ -7,8 +7,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Revolutionizing Healthcare: The Imperative of Smart Hospitals",
-  description: "This is Blog Details Page",
-  // other metadata
+  description: "Technosive promotes smart hospitals, emphasizing their pivotal role in improving health outcomes, resource efficiency, and cost-effectiveness in healthcare.",
 };
 
 const BlogDetailsPage = () => {
@@ -30,6 +29,8 @@ const BlogDetailsPage = () => {
                           <Image
                             src="/images/blog/revolutionizing-healthcare/author.webp"
                             alt="author"
+                            placeholder="blur"
+                            blurDataURL="https://img.freepik.com/premium-vector/black-white-gradients-creative-project_88211-445.jpg"
                             fill
                             unoptimized
                           />
@@ -111,6 +112,8 @@ const BlogDetailsPage = () => {
                       <Image
                         src="/images/blog/revolutionizing-healthcare/160.webp"
                         alt="image"
+                        placeholder="blur"
+                        blurDataURL="https://img.freepik.com/premium-vector/black-white-gradients-creative-project_88211-445.jpg"
                         fill
                         className="object-cover object-center"
                         unoptimized
@@ -359,10 +362,10 @@ const BlogDetailsPage = () => {
                         Popular Tags :
                       </h4>
                       <div className="flex items-center">
-                        <TagButton text="#HealthcareRevolution" />
-                        <TagButton text="#FutureOfHealth" />
-                        <TagButton text="#IoTinHealthcare" />
-                        <TagButton text="#WellnessTech" />
+                        <TagButton text="Healthcare Transformation" />
+                        <TagButton text="Digital Health" />
+                        <TagButton text="IOT" />
+                        <TagButton text="Efficient Healthcare" />
                       </div>
                     </div>
                     <div className="mb-5">

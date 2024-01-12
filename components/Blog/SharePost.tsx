@@ -4,6 +4,7 @@ const SharePost = () => {
       <a
         href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Ftechnosive.co.uk%2Fblogs%2Frevolutionizing-healthcare&title="
         target="_blank"
+        rel="noreferrer"
         aria-label="social-share"
         className="bg-gray-light dark:bg-gray-dark mb-3 inline-flex h-9 w-9 items-center justify-center rounded-sm text-body-color duration-300 hover:bg-primary hover:text-white dark:hover:bg-primary sm:ml-3"
       >
@@ -19,6 +20,7 @@ const SharePost = () => {
       <a
         href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ftechnosive.co.uk%2Fblogs%2Frevolutionizing-healthcare&text="
         target="_blank"
+        rel="noreferrer"
         aria-label="social-share"
         className="bg-gray-light dark:bg-gray-dark mb-3 ml-3 inline-flex h-9 w-9 items-center justify-center rounded-sm text-body-color duration-300 hover:bg-primary hover:text-white dark:hover:bg-primary"
       >
@@ -34,6 +36,7 @@ const SharePost = () => {
       <a
         href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftechnosive.co.uk%2Fblogs%2Frevolutionizing-healthcare"
         target="_blank"
+        rel="noreferrer"
         aria-label="social-share"
         className="bg-gray-light dark:bg-gray-dark mb-3 ml-3 inline-flex h-9 w-9 items-center justify-center rounded-sm text-body-color duration-300 hover:bg-primary hover:text-white dark:hover:bg-primary"
       >

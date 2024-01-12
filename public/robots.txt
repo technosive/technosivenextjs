@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /*
+
+# Host
+Host:technosive.co.uk
+
+# Sitemaps
+Sitemap: https://technosive.co.uk/sitemap.xml

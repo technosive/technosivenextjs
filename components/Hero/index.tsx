@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { FaWhatsapp } from "react-icons/fa";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 const Hero = () => {
@@ -39,17 +40,18 @@ const Hero = () => {
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
-                    href="/#services"
+                    href="https://outlook.office365.com/owa/calendar/AbdulSalamsCalendar@technosive.co.uk/bookings/"
+                    target="_blnak"
                     className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
-                    Read More 💡
+                    Consult for Free 💁
                   </Link>
                   <Link
-                    href="https://outlook.office365.com/owa/calendar/AbdulSalamsCalendar@technosive.co.uk/bookings/"
+                    href="https://wa.me/447448969009"
                     target="_blank"
-                    className="inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
+                    className="flex flex-row items-center justify-center  rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
                   >
-                    Contact Us 💁‍♂️
+                    Get in Touch <FaWhatsapp className="text-[#25d267] ml-3 text-xl" />
                   </Link>
                 </div>
               </div>
