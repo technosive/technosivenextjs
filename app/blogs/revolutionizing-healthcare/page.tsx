@@ -1,5 +1,6 @@
 import SharePost from "@/components/Blog/SharePost";
 import TagButton from "@/components/Blog/TagButton";
+import Head from "next/head";
 import Image from "next/image";
 
 import { Metadata } from "next";
@@ -7,12 +8,39 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Revolutionizing Healthcare: The Imperative of Smart Hospitals",
-  description: "Technosive promotes smart hospitals, emphasizing their pivotal role in improving health outcomes, resource efficiency, and cost-effectiveness in healthcare.",
+  description:
+    "Technosive promotes smart hospitals, emphasizing their pivotal role in improving health outcomes, resource efficiency, and cost-effectiveness in healthcare.",
+};
+
+const sharedPostDetails = {
+  title: "Revolutionizing Healthcare: The Imperative of Smart Hospitals",
+  description:
+    "Technosive promotes smart hospitals, emphasizing their pivotal role in improving health outcomes, resource efficiency, and cost-effectiveness in healthcare.",
+  postUrl: "https://technosive.co.uk/blogs/revolutionizing-healthcare",
+  imgUrl:
+    "https://technosive.co.uk/images/blog/revolutionizing-healthcare/160.webp",
+  imgAltText: "Error loading Revolutionizing Healthcare Image",
 };
 
 const BlogDetailsPage = () => {
   return (
     <>
+      <Head>
+        <title>{sharedPostDetails.title} </title>
+        <meta name="description" content={sharedPostDetails.description} />
+
+        {/* Open Graph meta tags */}
+        <meta property="og:title" content={sharedPostDetails.title} />
+        <meta
+          property="og:description"
+          content={sharedPostDetails.description}
+        />
+        <meta property="og:url" content={sharedPostDetails.postUrl} />
+        <meta property="og:image" content={sharedPostDetails.imgUrl} />
+        <meta property="og:image:alt" content={sharedPostDetails.imgAltText} />
+        <meta property="og:image:type" content="image/webp" />
+      </Head>
+
       <section className="pb-[120px] pt-[150px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap justify-center">
@@ -96,16 +124,20 @@ const BlogDetailsPage = () => {
                     </div>
                   </div>
                   <div className="mb-5">
-                    <p
-                      className="inline-flex items-center justify-center rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white"
-                    >
+                    <p className="inline-flex items-center justify-center rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white">
                       Healthcare
                     </p>
                   </div>
                 </div>
                 <div>
                   <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Introduction: In the dynamic realm of healthcare, the need for smart hospitals is unequivocal. At Technosive, we understand that optimized healthcare systems are not only vital for health-centric, wellness-preserving benefits but also hold the potential for cost savings, improved resource management, sustainability, and enhanced personnel efficiency.
+                    Introduction: In the dynamic realm of healthcare, the need
+                    for smart hospitals is unequivocal. At Technosive, we
+                    understand that optimized healthcare systems are not only
+                    vital for health-centric, wellness-preserving benefits but
+                    also hold the potential for cost savings, improved resource
+                    management, sustainability, and enhanced personnel
+                    efficiency.
                   </p>
                   <div className="mb-10 w-full overflow-hidden rounded">
                     <div className="relative aspect-[97/60] w-full sm:aspect-[97/44]">
@@ -121,23 +153,38 @@ const BlogDetailsPage = () => {
                     </div>
                   </div>
                   <p className="mb-8 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    <p>
-                      What are Smart Hospitals?
-                    </p>
-                    Similar to smart buildings, smart hospitals harness the power of data to gain intricate insights into hospital operations. Through smart sensors and pressure pads, real-time data readings are transmitted across various metrics, creating a comprehensive view accessible through a remotely accessible dashboard. Powered by the Internet of Things (IoT), these solutions capture data on patients, critical equipment, personnel, and inventories, fostering a data-driven approach.
+                    <p>What are Smart Hospitals?</p>
+                    Similar to smart buildings, smart hospitals harness the
+                    power of data to gain intricate insights into hospital
+                    operations. Through smart sensors and pressure pads,
+                    real-time data readings are transmitted across various
+                    metrics, creating a comprehensive view accessible through a
+                    remotely accessible dashboard. Powered by the Internet of
+                    Things (IoT), these solutions capture data on patients,
+                    critical equipment, personnel, and inventories, fostering a
+                    data-driven approach.
                   </p>
 
                   <h3 className="font-xl mb-10 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
                     Empowering Healthcare Providers:
                   </h3>
                   <p className="mb-4 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Tailored Patient Offerings: Data analysis and intelligent reporting empower hospitals to customize their offerings, providing optimal value to patients both in the immediate term and for future needs.
+                    Tailored Patient Offerings: Data analysis and intelligent
+                    reporting empower hospitals to customize their offerings,
+                    providing optimal value to patients both in the immediate
+                    term and for future needs.
                   </p>
                   <p className="mb-4 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Proactive Patient Care: By setting pre-programmable thresholds, smart hospitals send alerts and notifications about undesirable changes, enabling timely action to avert issues and enhance patient care standards.
+                    Proactive Patient Care: By setting pre-programmable
+                    thresholds, smart hospitals send alerts and notifications
+                    about undesirable changes, enabling timely action to avert
+                    issues and enhance patient care standards.
                   </p>
                   <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Strategic Decision-Making: Over the medium and long term, accumulated data sets empower decision-makers to strategize based on actual, detailed insights, offering a more intuitive and personalized experience for patients.
+                    Strategic Decision-Making: Over the medium and long term,
+                    accumulated data sets empower decision-makers to strategize
+                    based on actual, detailed insights, offering a more
+                    intuitive and personalized experience for patients.
                   </p>
                   {/* <ul className="mb-10 list-inside list-disc text-body-color">
                     <li className="mb-2 text-base font-medium text-body-color sm:text-lg lg:text-base xl:text-lg">
@@ -307,61 +354,98 @@ const BlogDetailsPage = () => {
                     Enhancing Hospital Operations:
                   </h3>
                   <p className="mb-4 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Optimized Resource Management: From equipment and HVAC systems to fire safety and legionella monitoring, smart technologies optimize maintenance and compliance, ensuring the highest standards in hospitals.
+                    Optimized Resource Management: From equipment and HVAC
+                    systems to fire safety and legionella monitoring, smart
+                    technologies optimize maintenance and compliance, ensuring
+                    the highest standards in hospitals.
                   </p>
                   <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Efficient Energy and Water Monitoring: Smart energy and water monitoring solutions identify wasted consumption, offering insights for benchmarking and assessing return on investment over time.
+                    Efficient Energy and Water Monitoring: Smart energy and
+                    water monitoring solutions identify wasted consumption,
+                    offering insights for benchmarking and assessing return on
+                    investment over time.
                   </p>
                   <h3 className="font-xl mb-10 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
                     Implementation of Smart Hospitals:
                   </h3>
                   <p className="mb-4 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Digital Twins: Hospitals, like the NHS pilot hospital, create digital twins of operations for instant insights into equipment, personnel, air quality, and temperature, improving standards of care.
+                    Digital Twins: Hospitals, like the NHS pilot hospital,
+                    create digital twins of operations for instant insights into
+                    equipment, personnel, air quality, and temperature,
+                    improving standards of care.
                   </p>
                   <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Patient Tracking: Smart technologies simplify patient monitoring, removing manual processes, saving time, and allowing staff to focus on essential tasks and incidents.
+                    Patient Tracking: Smart technologies simplify patient
+                    monitoring, removing manual processes, saving time, and
+                    allowing staff to focus on essential tasks and incidents.
                     <p>
-                      Space Utilization and Patient Flow: Monitoring hospital floorspace optimizes space utilization, ensuring care is provided efficiently, whether in everyday scenarios or during critical situations.
+                      Space Utilization and Patient Flow: Monitoring hospital
+                      floorspace optimizes space utilization, ensuring care is
+                      provided efficiently, whether in everyday scenarios or
+                      during critical situations.
                     </p>
                   </p>
                   <h3 className="font-xl mb-10 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
                     Benefits of Smart Beds and Smart Hospitals:
                   </h3>
                   <p className="mb-4 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Simplicity in Integration: The retrofit capability of smart technologies seamlessly integrates within existing hospital infrastructure, ensuring easy deployment.
+                    Simplicity in Integration: The retrofit capability of smart
+                    technologies seamlessly integrates within existing hospital
+                    infrastructure, ensuring easy deployment.
                   </p>
                   <p className="mb-4 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Cost Saving Potential: Smart hospitals achieve cost-saving potential through maximized care potential, reduced operating costs, and optimized maintenance and management.
+                    Cost Saving Potential: Smart hospitals achieve cost-saving
+                    potential through maximized care potential, reduced
+                    operating costs, and optimized maintenance and management.
                   </p>
                   <p className="mb-4 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Sustainability Initiatives: A strategic approach to sustainability is facilitated through smart energy monitoring, water conservation, and waste management, contributing to a greener future.
+                    Sustainability Initiatives: A strategic approach to
+                    sustainability is facilitated through smart energy
+                    monitoring, water conservation, and waste management,
+                    contributing to a greener future.
                   </p>
                   <p className="mb-4 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Efficient Personnel Support: Smart beds and hospitals enhance personnel efficiency by enabling accurate care monitoring and early alerts, reducing the risk of human error and promoting collaboration.
+                    Efficient Personnel Support: Smart beds and hospitals
+                    enhance personnel efficiency by enabling accurate care
+                    monitoring and early alerts, reducing the risk of human
+                    error and promoting collaboration.
                   </p>
                   <p className="mb-4 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Promoting Automation: Big data and smart technologies offer automation opportunities, freeing up personnel for more efficient job performance, complementing personalized care offerings.
+                    Promoting Automation: Big data and smart technologies offer
+                    automation opportunities, freeing up personnel for more
+                    efficient job performance, complementing personalized care
+                    offerings.
                   </p>
                   <p className="mb-4 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Intelligent Hospital Design: Analyzing day-to-day hospital data shapes future hospital designs, creating intelligent models for sustainable smart hospitals suited for a changing world.
+                    Intelligent Hospital Design: Analyzing day-to-day hospital
+                    data shapes future hospital designs, creating intelligent
+                    models for sustainable smart hospitals suited for a changing
+                    world.
                   </p>
                   <p className="mb-4 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    A Smart Future with Technosive – Smarter Technologies:
-
-                    In a fast-growing, ageing population, the demand for accessible, high standards of care is pressing. Technosive leads the way in championing with smart technologies, paving the path toward smart hospitals that prioritize wellness, quality of life, and efficient healthcare. Contact{" "}
-                    <Link href="https://outlook.office365.com/owa/calendar/AbdulSalamsCalendar@technosive.co.uk/bookings/" className="text-primary underline" target="_blank" rel="noreferrer">
+                    A Smart Future with Technosive – Smarter Technologies: In a
+                    fast-growing, ageing population, the demand for accessible,
+                    high standards of care is pressing. Technosive leads the way
+                    in championing with smart technologies, paving the path
+                    toward smart hospitals that prioritize wellness, quality of
+                    life, and efficient healthcare. Contact{" "}
+                    <Link
+                      href="https://outlook.office365.com/owa/calendar/AbdulSalamsCalendar@technosive.co.uk/bookings/"
+                      className="text-primary underline"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       Technosive to embark on the journey of transforming
                     </Link>{" "}
                     healthcare through smart technologies.
                   </p>
-
 
                   <div className="items-center justify-between sm:flex">
                     <div className="mb-5">
                       <h4 className="mb-3 text-sm font-medium text-body-color">
                         Popular Tags :
                       </h4>
-                      <div className="flex items-center">
+                      <div className="flex flex-wrap items-center">
                         <TagButton text="Healthcare Transformation" />
                         <TagButton text="Digital Health" />
                         <TagButton text="IOT" />
@@ -373,7 +457,11 @@ const BlogDetailsPage = () => {
                         Share this post :
                       </h5>
                       <div className="flex items-center sm:justify-end">
-                        <SharePost />
+                        <SharePost
+                          title={sharedPostDetails.title}
+                          postUrl={sharedPostDetails.postUrl}
+                          description={sharedPostDetails.description}
+                        />
                       </div>
                     </div>
                   </div>
