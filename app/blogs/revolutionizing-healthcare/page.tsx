@@ -1,46 +1,65 @@
 import SharePost from "@/components/Blog/SharePost";
 import TagButton from "@/components/Blog/TagButton";
-import Head from "next/head";
 import Image from "next/image";
 
 import { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+const cBlog = {
   title: "Revolutionizing Healthcare: The Imperative of Smart Hospitals",
   description:
     "Technosive promotes smart hospitals, emphasizing their pivotal role in improving health outcomes, resource efficiency, and cost-effectiveness in healthcare.",
-};
-
-const sharedPostDetails = {
-  title: "Revolutionizing Healthcare: The Imperative of Smart Hospitals",
-  description:
-    "Technosive promotes smart hospitals, emphasizing their pivotal role in improving health outcomes, resource efficiency, and cost-effectiveness in healthcare.",
-  postUrl: "https://technosive.co.uk/blogs/revolutionizing-healthcare",
   imgUrl:
     "https://technosive.co.uk/images/blog/revolutionizing-healthcare/160.webp",
-  imgAltText: "Error loading Revolutionizing Healthcare Image",
+  postUrl: "https://technosive.co.uk/blogs/revolutionizing-healthcare",
+  imgAltText: "Revolutionizing Healthcare",
+  keywords: [
+    "HealthTech",
+    "MedTech",
+    "SmartCare",
+    "E-Health",
+    "FuturMed",
+    "MedInno",
+    "TechCare",
+    "DigitalRx",
+    "HealHub",
+    "E-Wellness",
+    "TeleMed",
+    "PulseTech",
+    "InfoMed",
+    "Iot",
+    "CareTech",
+    "TechCure",
+    "VivaMed",
+    "HealSync",
+    "MedIQ",
+    "HealthPulse",
+    "TechVital",
+  ],
+};
+
+const social = {
+  title: cBlog.title,
+  description: cBlog.description,
+  images: [
+    {
+      url: cBlog.imgUrl,
+      alt: cBlog.imgAltText,
+    },
+  ],
+};
+
+export const metadata: Metadata = {
+  title: cBlog.title,
+  description: cBlog.description,
+  keywords: cBlog.keywords,
+  openGraph: social,
+  twitter: social,
 };
 
 const BlogDetailsPage = () => {
   return (
     <>
-      <Head>
-        <title>{sharedPostDetails.title} </title>
-        <meta name="description" content={sharedPostDetails.description} />
-
-        {/* Open Graph meta tags */}
-        <meta property="og:title" content={sharedPostDetails.title} />
-        <meta
-          property="og:description"
-          content={sharedPostDetails.description}
-        />
-        <meta property="og:url" content={sharedPostDetails.postUrl} />
-        <meta property="og:image" content={sharedPostDetails.imgUrl} />
-        <meta property="og:image:alt" content={sharedPostDetails.imgAltText} />
-        <meta property="og:image:type" content="image/webp" />
-      </Head>
-
       <section className="pb-[120px] pt-[150px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap justify-center">
@@ -124,9 +143,16 @@ const BlogDetailsPage = () => {
                     </div>
                   </div>
                   <div className="mb-5">
-                    <p className="inline-flex items-center justify-center rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white">
-                      Healthcare
-                    </p>
+                    <h5 className="mb-3 text-sm font-medium text-body-color sm:text-right">
+                      Share this post :
+                    </h5>
+                    <div className="flex items-center sm:justify-end">
+                      <SharePost
+                        title={cBlog.title}
+                        postUrl={cBlog.postUrl}
+                        description={cBlog.description}
+                      />
+                    </div>
                   </div>
                 </div>
                 <div>
@@ -458,9 +484,9 @@ const BlogDetailsPage = () => {
                       </h5>
                       <div className="flex items-center sm:justify-end">
                         <SharePost
-                          title={sharedPostDetails.title}
-                          postUrl={sharedPostDetails.postUrl}
-                          description={sharedPostDetails.description}
+                          title={cBlog.title}
+                          postUrl={cBlog.postUrl}
+                          description={cBlog.description}
                         />
                       </div>
                     </div>

@@ -110,6 +110,14 @@ const Footer = () => {
                 <ul>
                   <li>
                     <Link
+                      href="/"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
                       href="/#blog"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
@@ -209,7 +217,7 @@ const Footer = () => {
 
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
-            <p className="text-center text-sm sm:text-base text-body-color dark:text-white">
+            <p className="text-center text-sm text-body-color dark:text-white sm:text-base">
               Copyright &copy; {year} TECHNOSIVE
             </p>
           </div>

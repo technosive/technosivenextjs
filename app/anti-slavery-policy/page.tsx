@@ -2,10 +2,41 @@ import Title from "@/components/Common/Section Title Common/Title";
 import SectionTitle from "@/components/Common/SectionTitle";
 import { Metadata } from "next";
 
+const AntiSlaveryMetadata = {
+  title: "Modern Anti-Slavery Policy | Technosive",
+  description:
+    "Technosive Limited: Committed to eradicating modern slavery and human trafficking. Our policy ensures compliance with the Modern Slavery Act 2015 for employees, contractors, suppliers, and business partners.",
+  imgUrl: "https://technosive.co.uk/images/logo/Technosive.webp",
+  imgAltText: "Technosive",
+  keywords: [
+    "Technosive Limited",
+    "Modern Slavery",
+    "Human Trafficking",
+    "Eradication",
+    "Compliance",
+    "Policy",
+    "Employees",
+    "Contractors",
+    "Suppliers",
+    "Business Partners",
+  ],
+};
+const social = {
+  title: AntiSlaveryMetadata.title,
+  description: AntiSlaveryMetadata.description,
+  images: [
+    {
+      url: AntiSlaveryMetadata.imgUrl,
+      alt: AntiSlaveryMetadata.imgAltText,
+    },
+  ],
+};
 export const metadata: Metadata = {
-  title: "Anti-Slavery Policy",
-  description: "This is Anti-Slavery Policy Page",
-  // other metadata
+  title: AntiSlaveryMetadata.title,
+  description: AntiSlaveryMetadata.description,
+  keywords: AntiSlaveryMetadata.keywords,
+  openGraph: social,
+  twitter: social,
 };
 
 const AntiSlavery = () => {

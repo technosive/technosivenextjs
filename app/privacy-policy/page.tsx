@@ -2,10 +2,38 @@ import Title from "@/components/Common/Section Title Common/Title";
 import SectionTitle from "@/components/Common/SectionTitle";
 import { Metadata } from "next";
 
+const privacyMetadata = {
+  title: "Privacy Policy | Technosive",
+  description:
+    "Our Privacy Policy: Safeguarding your data is our priority. Learn how we collect, use, and protect your information. Your privacy matters to us.",
+  imgUrl: "https://technosive.co.uk/images/logo/Technosive.webp",
+  imgAltText: "Technosive",
+  keywords: [
+    "Technosive",
+    "Privacy Policy",
+    "Data Protection",
+    "Information Security",
+    "Privacy Matters",
+    "Legal Processing",
+    "Rights Management",
+  ],
+};
+const social = {
+  title: privacyMetadata.title,
+  description: privacyMetadata.description,
+  images: [
+    {
+      url: privacyMetadata.imgUrl,
+      alt: privacyMetadata.imgAltText,
+    },
+  ],
+};
 export const metadata: Metadata = {
-  title: "Privacy Policy",
-  description: "This is Privacy Policy Page",
-  // other metadata
+  title: privacyMetadata.title,
+  description: privacyMetadata.description,
+  keywords: privacyMetadata.keywords,
+  openGraph: social,
+  twitter: social,
 };
 
 const PrivacyPolicy = () => {
@@ -243,10 +271,10 @@ const PrivacyPolicy = () => {
                     <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
                       We may use cookies and other tracking technologies to
                       collect information about your use of our website, such as
-                      session cookies and persistent cookies. You can control the
-                      use of cookies by adjusting your browser settings. However,
-                      disabling cookies may limit your ability to use certain
-                      features of our website.
+                      session cookies and persistent cookies. You can control
+                      the use of cookies by adjusting your browser settings.
+                      However, disabling cookies may limit your ability to use
+                      certain features of our website.
                     </p>
                   </div>
 

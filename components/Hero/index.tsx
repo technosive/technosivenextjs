@@ -16,7 +16,7 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative z-10 overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
+        className=" z-10 overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
@@ -25,7 +25,7 @@ const Hero = () => {
                 className="wow fadeInUp mx-auto max-w-[900px]"
                 data-wow-delay=".2s"
               >
-                <h1 className="mb-5 text-3xl text-center flex flex-col sm:flex-row sm:text-left sm:gap-x-4 font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
+                <h1 className="mb-5 flex flex-col text-center text-3xl font-bold leading-tight text-black dark:text-white sm:flex-row sm:gap-x-4 sm:text-left sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
                   Your Partner for
                   <span>
                     {textAnimation} <Cursor cursorStyle="|" />
@@ -51,7 +51,8 @@ const Hero = () => {
                     target="_blank"
                     className="flex flex-row items-center justify-center  rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
                   >
-                    Get in Touch <FaWhatsapp className="text-[#25d267] ml-3 text-xl" />
+                    Get in Touch{" "}
+                    <FaWhatsapp className="ml-3 text-xl text-[#25d267]" />
                   </Link>
                 </div>
               </div>

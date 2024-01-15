@@ -1,11 +1,30 @@
 import Title from "@/components/Common/Section Title Common/Title";
-import SectionTitle from "@/components/Common/SectionTitle";
 import { Metadata } from "next";
 
+const TosMetadata = {
+  title: "Terms of Service | Technosive",
+  description:
+    "Access our services professionally by agreeing to our concise Terms of Service for guidelines and rules. Review them carefully.",
+  imgUrl: "https://technosive.co.uk/images/logo/Technosive.webp",
+  imgAltText: "Technosive",
+  keywords: ["Technosive", "Terms of Service", "Guidelines", "Rules"],
+};
+const social = {
+  title: TosMetadata.title,
+  description: TosMetadata.description,
+  images: [
+    {
+      url: TosMetadata.imgUrl,
+      alt: TosMetadata.imgAltText,
+    },
+  ],
+};
 export const metadata: Metadata = {
-  title: "Terms of Service",
-  description: "This is TOS Page",
-  // other metadata
+  title: TosMetadata.title,
+  description: TosMetadata.description,
+  keywords: TosMetadata.keywords,
+  openGraph: social,
+  twitter: social,
 };
 
 const Terms = () => {
@@ -82,9 +101,9 @@ const Terms = () => {
                     aliquet porttitor. Odio pellentesque diam volutpat commodo
                     sed.
                   </p> */}
-                  <h3 className="font-xl mb-10 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
+                  <h1 className="font-xl mb-10 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
                     Prohibited Uses:
-                  </h3>
+                  </h1>
 
                   <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
                     You agree not to use the Website:
@@ -146,9 +165,9 @@ const Terms = () => {
                     </p>
                   </div> */}
 
-                  <h3 className="font-xl mb-10 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
+                  <h1 className="font-xl mb-10 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
                     Contact Us
-                  </h3>
+                  </h1>
                   <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
                     If you have any questions, concerns, or feedback regarding
                     these Terms, please contact us at &nbsp;
