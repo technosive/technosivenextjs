@@ -1,5 +1,4 @@
 import Title from "@/components/Common/Section Title Common/Title";
-import SectionTitle from "@/components/Common/SectionTitle";
 import { Metadata } from "next";
 
 const AntiSlaveryMetadata = {

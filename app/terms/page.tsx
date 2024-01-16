@@ -2,6 +2,7 @@ import Title from "@/components/Common/Section Title Common/Title";
 import { Metadata } from "next";
 
 const TosMetadata = {
+  url: "https://technosive.co.uk/terms",
   title: "Terms of Service | Technosive",
   description:
     "Access our services professionally by agreeing to our concise Terms of Service for guidelines and rules. Review them carefully.",
@@ -20,6 +21,7 @@ const social = {
   ],
 };
 export const metadata: Metadata = {
+  metadataBase: new URL(TosMetadata.url),
   title: TosMetadata.title,
   description: TosMetadata.description,
   keywords: TosMetadata.keywords,

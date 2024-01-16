@@ -14,6 +14,7 @@ const cBlog = {
   postUrl: "https://technosive.co.uk/blogs/revolutionizing-healthcare",
   imgAltText: "Revolutionizing Healthcare",
   keywords: [
+    "Technosive",
     "HealthTech",
     "MedTech",
     "SmartCare",
@@ -50,6 +51,7 @@ const social = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL(cBlog.postUrl),
   title: cBlog.title,
   description: cBlog.description,
   keywords: cBlog.keywords,

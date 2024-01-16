@@ -20,7 +20,7 @@ const AboutSectionTwo = () => {
                 src="/images/about/about-image-2-dark.svg"
                 alt="about image"
                 fill
-                className="drop-shadow-three hidden dark:block dark:drop-shadow-none"
+                className="hidden drop-shadow-three dark:block dark:drop-shadow-none"
               />
             </div>
           </div>
@@ -31,12 +31,10 @@ const AboutSectionTwo = () => {
                   Management Team
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  20+ Years of Tech Industry experience
-                  Government, BFSI & Health domain expertise
-                  Highly qualified business consultants
-                  Regulatory compliance expertise
-                  Program and strategy management
-                  Digital transformation Strategy & planning
+                  20+ Years of Tech Industry experience Government, BFSI &
+                  Health domain expertise Highly qualified business consultants
+                  Regulatory compliance expertise Program and strategy
+                  management Digital transformation Strategy & planning
                 </p>
               </div>
               <div className="mb-9">
@@ -44,13 +42,10 @@ const AboutSectionTwo = () => {
                   Mid Management
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  10+ Years of Tech Industry experience
-                  Government, BFSI & Health domain expertise
-                  Business analysts
-                  Compliance planning & certification  
-                  Project management
-                  System design & Blue printing
-                  Qualified  professional certifications
+                  10+ Years of Tech Industry experience Government, BFSI &
+                  Health domain expertise Business analysts Compliance planning
+                  & certification Project management System design & Blue
+                  printing Qualified professional certifications
                 </p>
               </div>
               <div className="mb-1">
@@ -58,12 +53,10 @@ const AboutSectionTwo = () => {
                   Customer Enagement Team
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  5+ Years of Tech Industry experience
-                  Government & Financial domain expertise
-                  Certified professional engineers 
-                  Compliance planning  
-                  Project execution and delivery
-                  System design & Blue printing
+                  5+ Years of Tech Industry experience Government & Financial
+                  domain expertise Certified professional engineers Compliance
+                  planning Project execution and delivery System design & Blue
+                  printing
                 </p>
               </div>
             </div>

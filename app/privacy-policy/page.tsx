@@ -3,6 +3,7 @@ import SectionTitle from "@/components/Common/SectionTitle";
 import { Metadata } from "next";
 
 const privacyMetadata = {
+  url: "https://technosive.co.uk/privacy-policy",
   title: "Privacy Policy | Technosive",
   description:
     "Our Privacy Policy: Safeguarding your data is our priority. Learn how we collect, use, and protect your information. Your privacy matters to us.",
@@ -29,6 +30,7 @@ const social = {
   ],
 };
 export const metadata: Metadata = {
+  metadataBase: new URL(privacyMetadata.url),
   title: privacyMetadata.title,
   description: privacyMetadata.description,
   keywords: privacyMetadata.keywords,

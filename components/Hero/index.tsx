@@ -25,10 +25,11 @@ const Hero = () => {
                 className="wow fadeInUp mx-auto max-w-[900px]"
                 data-wow-delay=".2s"
               >
-                <h1 className="mb-5 flex flex-col text-center text-3xl font-bold leading-tight text-black dark:text-white sm:flex-row sm:gap-x-4 sm:text-left sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
+                <h1 className="mb-5 flex flex-col text-center text-3xl font-bold leading-tight text-black dark:text-white sm:gap-x-4 sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight lg:flex-row lg:text-left">
                   Your Partner for
                   <span>
-                    {textAnimation} <Cursor cursorStyle="|" />
+                    {textAnimation}
+                    <Cursor cursorStyle="|" />
                   </span>
                 </h1>
                 <p className="mb-12 text-center text-sm !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">

@@ -9,12 +9,9 @@ import dynamic from "next/dynamic";
 import { Inter } from "next/font/google";
 import "node_modules/react-modal-video/css/modal-video.css";
 import { useEffect, useState } from "react";
-import Loading from "../loading";
 import "../styles/index.css";
+import Loading from "./loading";
 import { Providers } from "./providers";
-
-// const Header = dynamic(() => import("@/components/Header"));
-// const Footer = dynamic(() => import("@/components/Footer"));
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,14 +20,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // const [showChildren, setShowChildren] = useState(false);
+  const [showChildren, setShowChildren] = useState(false);
 
-  // useEffect(() => {
-  //   const fakeLoadingTimeout = setTimeout(() => {
-  //     setShowChildren(true);
-  //   }, 2000000);
-  //   return () => clearTimeout(fakeLoadingTimeout);
-  // }, [children]);
+  useEffect(() => {
+    const fakeLoadingTimeout = setTimeout(() => {
+      setShowChildren(true);
+    }, 2000);
+    return () => clearTimeout(fakeLoadingTimeout);
+  }, [children]);
 
   return (
     <html lang="en">
@@ -43,22 +40,22 @@ export default function RootLayout({
       </head>
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
         <Providers>
-          {/* {showChildren ? (
+          {showChildren ? (
             <>
-            <Header />
-            {children}
-            <Footer />
-            <ScrollToTop />
+              <Header />
+              {children}
+              <Footer />
+              <ScrollToTop />
+              <CookieBanner />
             </>
-            ) : (
-              <Loading />
-            )} */}
-          <Header />
+          ) : (
+            <Loading />
+          )}
+          {/* <Header />
           {children}
           <Footer />
-          <ScrollToTop />
+          <ScrollToTop /> */}
         </Providers>
-        <CookieBanner />
       </body>
     </html>
   );

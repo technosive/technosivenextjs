@@ -18,6 +18,7 @@ const Video = dynamic(() => import("@/components/Video"));
 const ScrollUp = dynamic(() => import("@/components/Common/ScrollUp"));
 
 const homeMetada = {
+  url: "https://technosive.co.uk",
   title: "Technosive | Your Partner for Innovation & Transformation",
   description:
     "Technosive: Your partner in progress, specializing in pioneering solutions for innovation and transformative change.",
@@ -49,6 +50,7 @@ const social = {
   ],
 };
 export const metadata: Metadata = {
+  metadataBase: new URL(homeMetada.url),
   title: homeMetada.title,
   description: homeMetada.description,
   keywords: homeMetada.keywords,
