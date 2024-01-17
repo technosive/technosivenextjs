@@ -25,7 +25,7 @@ export default function RootLayout({
   useEffect(() => {
     const fakeLoadingTimeout = setTimeout(() => {
       setShowChildren(true);
-    }, 2000);
+    }, 1000);
     return () => clearTimeout(fakeLoadingTimeout);
   }, [children]);
 

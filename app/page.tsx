@@ -50,7 +50,6 @@ const social = {
   ],
 };
 export const metadata: Metadata = {
-  metadataBase: new URL(homeMetada.url),
   title: homeMetada.title,
   description: homeMetada.description,
   keywords: homeMetada.keywords,
