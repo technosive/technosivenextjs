@@ -118,10 +118,10 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="/#blog"
+                      href="/#services"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Blog
+                      Services
                     </Link>
                   </li>
                   {/* <li>
@@ -132,14 +132,6 @@ const Footer = () => {
                       Pricing
                     </a>
                   </li> */}
-                  <li>
-                    <a
-                      href="/#services"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      About
-                    </a>
-                  </li>
                 </ul>
               </div>
             </div>

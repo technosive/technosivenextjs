@@ -21,6 +21,7 @@ const social = {
   ],
 };
 export const metadata: Metadata = {
+  metadataBase: new URL(TosMetadata.url),
   title: TosMetadata.title,
   description: TosMetadata.description,
   keywords: TosMetadata.keywords,

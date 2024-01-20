@@ -21,12 +21,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const [showChildren, setShowChildren] = useState(false);
+  const [cookieBanner, setCookieBanner] = useState(false);
 
   useEffect(() => {
     const fakeLoadingTimeout = setTimeout(() => {
       setShowChildren(true);
-    }, 1000);
-    return () => clearTimeout(fakeLoadingTimeout);
+    }, 750);
+    const cookieTimeout = setTimeout(() => {
+      setCookieBanner(true);
+    }, 3200);
+    return () => {
+      clearTimeout(fakeLoadingTimeout);
+      clearTimeout(cookieTimeout);
+    };
   }, [children]);
 
   return (
@@ -41,7 +48,7 @@ export default function RootLayout({
       </head>
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
         <Providers>
-          {showChildren ? (
+          {/* {showChildren ? (
             <>
               <Header />
               {children}
@@ -51,11 +58,18 @@ export default function RootLayout({
             </>
           ) : (
             <Loading />
+          )} */}
+          {showChildren ? (
+            <>
+              <Header />
+              {children}
+              <Footer />
+              <ScrollToTop />
+            </>
+          ) : (
+            <Loading />
           )}
-          {/* <Header />
-          {children}
-          <Footer />
-          <ScrollToTop /> */}
+          {cookieBanner ? <CookieBanner /> : null}
         </Providers>
       </body>
     </html>

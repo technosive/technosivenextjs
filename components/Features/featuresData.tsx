@@ -13,8 +13,9 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "Digital Transformation",
+    path: "/digital-transformation",
     paragraph:
-    "Embark on seamless digital transformation with Smart IoT solutions. Integrate intelligent technologies for real-time insights, enhanced efficiency, and innovative growth.",
+      "Embark on seamless digital transformation with Smart IoT solutions. Integrate intelligent technologies for real-time insights, enhanced efficiency, and innovative growth.",
   },
   {
     id: 1,
@@ -28,8 +29,9 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "Software Development",
+    path: "/software-development",
     paragraph:
-    "Crafting tailored software solutions to meet your unique needs. Our expertise in software development ensures scalable, efficient, and innovative solutions that empower your business for success."
+      "Crafting tailored software solutions to meet your unique needs. Our expertise in software development ensures scalable, efficient, and innovative solutions that empower your business for success.",
   },
   {
     id: 1,
@@ -43,8 +45,9 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "Cyber Security",
+    path: "/cybersecurity",
     paragraph:
-    "Guarding your digital assets with robust cybersecurity solutions. Our expertise ensures proactive threat detection, risk mitigation, and resilient defense mechanisms, providing a secure foundation for your digital landscape."
+      "Guarding your digital assets with robust cybersecurity solutions. Our expertise ensures proactive threat detection, risk mitigation, and resilient defense mechanisms, providing a secure foundation for your digital landscape.",
   },
   {
     id: 1,
@@ -58,8 +61,9 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "Application Modernization",
+    path: "/application-modernization",
     paragraph:
-    "Revitalize your applications with modernization solutions. Our expertise transforms legacy systems, enhancing performance, scalability, and user experience to meet contemporary standards and future-proof your digital infrastructure."
+      "Revitalize your applications with modernization solutions. Our expertise transforms legacy systems, enhancing performance, scalability, and user experience to meet contemporary standards and future-proof your digital infrastructure.",
   },
   {
     id: 1,
@@ -73,8 +77,9 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "Cloud Computing",
+    path: "/cloud-computing",
     paragraph:
-    "Empower your business with Cloud Computing. Harness the flexibility, scalability, and efficiency of cloud-based solutions, ensuring seamless access to resources, enhanced collaboration, and optimal performance for your digital endeavors."
+      "Empower your business with Cloud Computing. Harness the flexibility, scalability, and efficiency of cloud-based solutions, ensuring seamless access to resources, enhanced collaboration, and optimal performance for your digital endeavors.",
   },
   {
     id: 1,
@@ -88,8 +93,9 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "Resource Augmentation",
+    path: "/resource-augmentation",
     paragraph:
-    "Enhance your team's capabilities with Resource Augmentation. Our skilled professionals seamlessly integrate into your projects, providing expertise and scalability to meet dynamic demands and ensure project success."
+      "Enhance your team's capabilities with Resource Augmentation. Our skilled professionals seamlessly integrate into your projects, providing expertise and scalability to meet dynamic demands and ensure project success.",
   },
 ];
 export default featuresData;

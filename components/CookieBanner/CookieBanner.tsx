@@ -37,17 +37,23 @@ export default function CookieBanner() {
                           shadow sm:flex-row md:px-4`}
     >
       <div className="text-center text-sm sm:text-base">
-        <Link href="/privacy-policy">
+        <span>
           <p>
-            We use <span className=" font-bold text-primary">cookies</span> on
-            our site.
+            We use{" "}
+            <Link
+              href="/privacy-policy"
+              className=" font-bold text-primary hover:underline"
+            >
+              cookies
+            </Link>{" "}
+            on our site.
           </p>
-        </Link>
+        </span>
       </div>
 
       <div className="flex gap-2">
         <button
-          className="rounded-md px-5 py-2 text-sm text-white "
+          className="rounded-md px-5 py-2 text-sm text-white hover:underline "
           onClick={() => setPopUp(false)}
         >
           Decline

@@ -2,6 +2,7 @@ import Title from "@/components/Common/Section Title Common/Title";
 import { Metadata } from "next";
 
 const AntiSlaveryMetadata = {
+  url: "https://technosive.co.uk/anti-slavery-policy",
   title: "Modern Anti-Slavery Policy | Technosive",
   description:
     "Technosive Limited: Committed to eradicating modern slavery and human trafficking. Our policy ensures compliance with the Modern Slavery Act 2015 for employees, contractors, suppliers, and business partners.",
@@ -31,6 +32,7 @@ const social = {
   ],
 };
 export const metadata: Metadata = {
+  metadataBase: new URL(AntiSlaveryMetadata.url),
   title: AntiSlaveryMetadata.title,
   description: AntiSlaveryMetadata.description,
   keywords: AntiSlaveryMetadata.keywords,

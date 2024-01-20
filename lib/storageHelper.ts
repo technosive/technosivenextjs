@@ -11,7 +11,12 @@ export function getLocalStorage(key: string, defaultValue: any) {
 export function getLocalStoragePopUp(key: string, defaultValue: any) {
   const stickyValue = localStorage.getItem(key);
 
-  return JSON.parse(stickyValue) == true ? false : defaultValue;
+  // Check if stickyValue is not null and not 'undefined' before attempting to parse it
+  return stickyValue !== null &&
+    stickyValue !== "undefined" &&
+    JSON.parse(stickyValue) === true
+    ? false
+    : defaultValue;
 }
 
 export function setLocalStorage(key: string, value: any) {

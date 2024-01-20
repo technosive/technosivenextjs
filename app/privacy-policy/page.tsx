@@ -30,6 +30,7 @@ const social = {
   ],
 };
 export const metadata: Metadata = {
+  metadataBase: new URL(privacyMetadata.url),
   title: privacyMetadata.title,
   description: privacyMetadata.description,
   keywords: privacyMetadata.keywords,
