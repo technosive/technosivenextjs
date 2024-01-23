@@ -49,6 +49,17 @@ export const metadata: Metadata = {
   title: cloudMetadata.title,
   description: cloudMetadata.description,
   keywords: cloudMetadata.keywords,
+  alternates: {
+    canonical: cloudMetadata.url,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
   openGraph: social,
   twitter: social,
 };

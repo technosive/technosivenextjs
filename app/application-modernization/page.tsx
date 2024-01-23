@@ -48,6 +48,17 @@ export const metadata: Metadata = {
   metadataBase: new URL(appModMetadata.url),
   title: appModMetadata.title,
   description: appModMetadata.description,
+  alternates: {
+    canonical: appModMetadata.url,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
   keywords: appModMetadata.keywords,
   openGraph: social,
   twitter: social,

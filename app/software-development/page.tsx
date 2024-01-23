@@ -65,6 +65,17 @@ export const metadata: Metadata = {
   title: softwareMetadata.title,
   description: softwareMetadata.description,
   keywords: softwareMetadata.keywords,
+  alternates: {
+    canonical: softwareMetadata.url,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
   openGraph: social,
   twitter: social,
 };

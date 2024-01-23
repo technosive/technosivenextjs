@@ -34,6 +34,17 @@ export const metadata: Metadata = {
   title: privacyMetadata.title,
   description: privacyMetadata.description,
   keywords: privacyMetadata.keywords,
+  alternates: {
+    canonical: privacyMetadata.url,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
   openGraph: social,
   twitter: social,
 };

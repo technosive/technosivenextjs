@@ -63,6 +63,17 @@ export const metadata: Metadata = {
   title: digitalTransMetadata.title,
   description: digitalTransMetadata.description,
   keywords: digitalTransMetadata.keywords,
+  alternates: {
+    canonical: digitalTransMetadata.url,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
   openGraph: social,
   twitter: social,
 };

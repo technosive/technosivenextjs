@@ -61,6 +61,17 @@ export const metadata: Metadata = {
   title: resourceMetadata.title,
   description: resourceMetadata.description,
   keywords: resourceMetadata.keywords,
+  alternates: {
+    canonical: resourceMetadata.url,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
   openGraph: social,
   twitter: social,
 };

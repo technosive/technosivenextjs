@@ -54,6 +54,17 @@ export const metadata: Metadata = {
   metadataBase: new URL(cBlog.postUrl),
   title: cBlog.title,
   description: cBlog.description,
+  alternates: {
+    canonical: cBlog.postUrl,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
   keywords: cBlog.keywords,
   openGraph: social,
   twitter: social,
