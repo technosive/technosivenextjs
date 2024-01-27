@@ -10,6 +10,7 @@
     "sitemap": "next-sitemap --config next-sitemap.config.js"
   },
   "dependencies": {
+    "@tabler/icons-react": "^2.46.0",
     "axios": "^1.6.5",
     "client-only": "^0.0.1",
     "eslint": "8.33.0",
