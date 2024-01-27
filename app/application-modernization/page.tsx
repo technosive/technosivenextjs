@@ -51,14 +51,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: appModMetadata.url,
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-    },
-  },
+
   keywords: appModMetadata.keywords,
   openGraph: social,
   twitter: social,

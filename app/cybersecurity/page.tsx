@@ -64,14 +64,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: cyberMetadata.url,
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-    },
-  },
+
   openGraph: social,
   twitter: social,
 };

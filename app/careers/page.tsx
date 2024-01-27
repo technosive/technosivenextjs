@@ -1,8 +1,8 @@
 import Title from "@/components/Common/Section Title Common/Title";
-import React from "react";
-import SingleCareer from "./SingleCareer";
-import { CareerData } from "./CareerData";
 import { Metadata } from "next";
+import React from "react";
+import { CareerData } from "./CareerData";
+import SingleCareer from "./SingleCareer";
 
 const CareerMetadata = {
   url: "https://technosive.co.uk/careers",
@@ -53,14 +53,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: CareerMetadata.url,
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-    },
-  },
+
   openGraph: social,
   twitter: social,
 };

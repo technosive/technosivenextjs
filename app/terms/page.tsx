@@ -28,14 +28,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: TosMetadata.url,
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-    },
-  },
+
   openGraph: social,
   twitter: social,
 };

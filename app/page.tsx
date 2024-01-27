@@ -92,14 +92,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: homeMetada.url,
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-    },
-  },
   verification: {
     google: "7pJ9AOhyY4Ln67j1g5_kYF2tyC8yxjtTwR76LFWWj58",
   },

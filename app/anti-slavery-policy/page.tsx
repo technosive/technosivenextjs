@@ -36,14 +36,7 @@ export const metadata: Metadata = {
   title: AntiSlaveryMetadata.title,
   description: AntiSlaveryMetadata.description,
   keywords: AntiSlaveryMetadata.keywords,
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-    },
-  },
+
   openGraph: social,
   twitter: social,
   alternates: {

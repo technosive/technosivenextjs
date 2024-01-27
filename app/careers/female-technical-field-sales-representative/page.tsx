@@ -1,5 +1,5 @@
-import React from "react";
 import { Metadata } from "next";
+import React from "react";
 
 const FemaleTechMetadata = {
   url: "https://technosive.co.uk/careers/female-technical-field-sales-representative",
@@ -63,14 +63,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: FemaleTechMetadata.url,
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-    },
-  },
+
   openGraph: social,
   twitter: social,
 };
