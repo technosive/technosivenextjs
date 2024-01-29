@@ -45,7 +45,6 @@ const social = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL(appModMetadata.url),
   title: appModMetadata.title,
   description: appModMetadata.description,
   alternates: {

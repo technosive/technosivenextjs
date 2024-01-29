@@ -55,6 +55,8 @@ const Contact = () => {
         });
       })
       .catch((error) => {
+        setFormData(initialFormData);
+        setLoading(false);
         toast.error("Internal Server Error", {
           position: "bottom-center",
           autoClose: 4000,

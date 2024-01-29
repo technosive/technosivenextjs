@@ -51,7 +51,6 @@ const social = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL(cBlog.postUrl),
   title: cBlog.title,
   description: cBlog.description,
   alternates: {

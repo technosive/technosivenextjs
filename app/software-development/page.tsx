@@ -61,7 +61,6 @@ const social = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL(softwareMetadata.url),
   title: softwareMetadata.title,
   description: softwareMetadata.description,
   keywords: softwareMetadata.keywords,

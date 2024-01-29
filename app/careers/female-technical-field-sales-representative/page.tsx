@@ -56,7 +56,6 @@ const social = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL(FemaleTechMetadata.url),
   title: FemaleTechMetadata.title,
   description: FemaleTechMetadata.description,
   keywords: FemaleTechMetadata.keywords,

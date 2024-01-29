@@ -32,7 +32,6 @@ const social = {
   ],
 };
 export const metadata: Metadata = {
-  metadataBase: new URL(AntiSlaveryMetadata.url),
   title: AntiSlaveryMetadata.title,
   description: AntiSlaveryMetadata.description,
   keywords: AntiSlaveryMetadata.keywords,

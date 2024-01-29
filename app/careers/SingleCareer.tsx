@@ -1,14 +1,14 @@
-import Image from "next/image";
-import React from "react";
-import { IconArrowNarrowRight } from "@tabler/icons-react";
-import Link from "next/link";
 import { Career } from "@/types/career";
+import { IconArrowNarrowRight } from "@tabler/icons-react";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
 const SingleCareer = ({ item }: { item: Career }) => {
   const { url, jobDescription, jobTitle, tag } = item;
   return (
-    <div className="m-5">
-      <div className="group mx-2 mt-10 grid max-w-screen-md grid-cols-12 space-x-8 overflow-hidden rounded-lg border-[2px] py-4 shadow transition hover:shadow-lg  dark:border-body-color sm:mx-auto">
+    <div className="m-5 flex">
+      <div className="group mx-2 mt-10 grid max-w-screen-md grid-cols-12 space-x-8 overflow-hidden rounded-lg bg-white py-4 shadow-three transition  dark:bg-gray-dark  sm:mx-auto">
         <Link
           href={url}
           className="order-2 col-span-1 -ml-14 mt-4 text-left  sm:-order-1 sm:ml-4"

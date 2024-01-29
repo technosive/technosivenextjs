@@ -59,7 +59,6 @@ const social = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL(digitalTransMetadata.url),
   title: digitalTransMetadata.title,
   description: digitalTransMetadata.description,
   keywords: digitalTransMetadata.keywords,

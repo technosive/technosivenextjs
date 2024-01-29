@@ -12,6 +12,7 @@ const SectionTitle = ({
   paragraph: string;
   width?: string;
   center?: boolean;
+  additionalClass?: string;
   mb?: string;
 }) => {
   return (

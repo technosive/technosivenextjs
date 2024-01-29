@@ -57,7 +57,6 @@ const social = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL(cyberMetadata.url),
   title: cyberMetadata.title,
   description: cyberMetadata.description,
   keywords: cyberMetadata.keywords,

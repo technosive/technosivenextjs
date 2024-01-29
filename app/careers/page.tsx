@@ -1,4 +1,5 @@
 import Title from "@/components/Common/Section Title Common/Title";
+import SectionTitle from "@/components/Common/SectionTitle";
 import { Metadata } from "next";
 import React from "react";
 import { CareerData } from "./CareerData";
@@ -6,7 +7,7 @@ import SingleCareer from "./SingleCareer";
 
 const CareerMetadata = {
   url: "https://technosive.co.uk/careers",
-  title: "Careers at Technosive",
+  title: "Careers | Technosive",
   description:
     "Discover rewarding careers at Technosive. Explore job openings, our vibrant culture, and join a team committed to innovation and growth. Apply now!",
   imgUrl: "https://technosive.co.uk/images/career/career-main.webp",
@@ -46,31 +47,33 @@ const social = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL(CareerMetadata.url),
   title: CareerMetadata.title,
   description: CareerMetadata.description,
   keywords: CareerMetadata.keywords,
   alternates: {
     canonical: CareerMetadata.url,
   },
-
   openGraph: social,
   twitter: social,
 };
 const Careers = () => {
   return (
-    <section className="min-h-screen pb-[120px] pt-[110px] sm:pt-[150px]">
+    <section className="pb-[120px] pt-[110px] sm:pt-[150px]">
       <div className="container">
         <div className="-mx-4 flex flex-wrap justify-center">
-          <div className="w-full px-4 lg:w-10/12">
-            <div>
-              <div>
-                <Title title="Careers at Technosive" center />
-
-                {CareerData.map((item) => {
-                  return <SingleCareer key={item.id} item={item} />;
-                })}
-              </div>
+          <div className="w-full px-4">
+            <div className="">
+              <SectionTitle
+                title="Join our Team"
+                paragraph="Join Technosive's innovative team in software development, cybersecurity, and more. Be part of a dynamic workplace that values your skills and growth."
+                center
+                mb="0"
+              />
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2">
+              {CareerData.map((item) => {
+                return <SingleCareer key={item.id} item={item} />;
+              })}
             </div>
           </div>
         </div>
