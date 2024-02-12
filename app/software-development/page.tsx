@@ -45,7 +45,7 @@ const softwareMetadata = {
     "Software maintenance",
     "Application lifecycle management",
   ],
-  imgUrl: "https://technosive.co.uk/images/logo/Technosive.webp",
+  imgUrl: "https://technosive.co.uk/images/logo/TechnosiveOG.webp",
   imgAltText: "Technosive",
 };
 

@@ -38,8 +38,13 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <head></head>
-      <GoogleAnalytics GA_MEASUREMENT_ID="G-9M37LG3Q45" />
+      <head>
+        <meta
+          name="google-site-verification"
+          content="7pJ9AOhyY4Ln67j1g5_kYF2tyC8yxjtTwR76LFWWj58"
+        />
+        <GoogleAnalytics GA_MEASUREMENT_ID="G-9M37LG3Q45" />
+      </head>
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
         <Providers>
           {showChildren ? (

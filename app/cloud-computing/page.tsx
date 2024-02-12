@@ -29,7 +29,7 @@ const cloudMetadata = {
     "Cloud architecture",
     "Cost-effective cloud",
   ],
-  imgUrl: "https://technosive.co.uk/images/logo/Technosive.webp",
+  imgUrl: "https://technosive.co.uk/images/logo/TechnosiveOG.webp",
   imgAltText: "Technosive",
 };
 

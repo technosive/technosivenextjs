@@ -6,7 +6,7 @@ const AntiSlaveryMetadata = {
   title: "Modern Anti-Slavery Policy | Technosive",
   description:
     "Technosive Limited: Committed to eradicating modern slavery and human trafficking. Our policy ensures compliance with the Modern Slavery Act 2015 for employees, contractors, suppliers, and business partners.",
-  imgUrl: "https://technosive.co.uk/images/logo/Technosive.webp",
+  imgUrl: "https://technosive.co.uk/images/logo/TechnosiveOG.webp",
   imgAltText: "Technosive",
   keywords: [
     "Technosive Limited",
@@ -49,11 +49,11 @@ const AntiSlavery = () => {
 
     "Software Development: Craft tailored solutions to meet your unique needs.Our software development ensures scalability, efficiency, and innovation, empowering your business for success.",
 
-    "Cyber Security: Guard your digital assets with robust cybersecurity solutions.Our expertise ensures proactive threat detection, risk mitigation, and resilient defence, providing a secure foundation for your digital landscape.",
+    "Cyber Security: Guard your digital assets with robust cybersecurity solutions.Our expertise ensures proactive threat detection, risk mitigation, and resilient defense, providing a secure foundation for your digital landscape.",
 
     "Application Modernization: Revitalize your applications with modernization solutions, enhancing performance, scalability, and user experience to meet contemporary standards.",
 
-    "Cloud Computing: Empower your business with Cloud Computing, ensuring seamless access to resources, enhanced collaboration, and optimal performance for your digital endeavours.",
+    "Cloud Computing: Empower your business with Cloud Computing, ensuring seamless access to resources, enhanced collaboration, and optimal performance for your digital endeavors.",
 
     "Resource Augmentation: Enhance your team's capabilities with Resource Augmentation. Our professionals seamlessly integrate, providing expertise and scalability for project success.",
   ];

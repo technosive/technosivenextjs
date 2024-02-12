@@ -7,7 +7,7 @@ const privacyMetadata = {
   title: "Privacy Policy | Technosive",
   description:
     "Our Privacy Policy: Safeguarding your data is our priority. Learn how we collect, use, and protect your information. Your privacy matters to us.",
-  imgUrl: "https://technosive.co.uk/images/logo/Technosive.webp",
+  imgUrl: "https://technosive.co.uk/images/logo/TechnosiveOG.webp",
   imgAltText: "Technosive",
   keywords: [
     "Technosive",

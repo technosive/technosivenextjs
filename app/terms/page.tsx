@@ -6,7 +6,7 @@ const TosMetadata = {
   title: "Terms of Service | Technosive",
   description:
     "Access our services professionally by agreeing to our concise Terms of Service for guidelines and rules. Review them carefully.",
-  imgUrl: "https://technosive.co.uk/images/logo/Technosive.webp",
+  imgUrl: "https://technosive.co.uk/images/logo/TechnosiveOG.webp",
   imgAltText: "Technosive",
   keywords: ["Technosive", "Terms of Service", "Guidelines", "Rules"],
 };

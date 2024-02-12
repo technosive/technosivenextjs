@@ -22,7 +22,7 @@ const homeMetada = {
   title: "Technosive | Your Partner for Innovation & Transformation",
   description:
     "Technosive: Your partner in progress, specializing in pioneering solutions for innovation and transformative change.",
-  imgUrl: "https://technosive.co.uk/images/logo/Technosive.webp",
+  imgUrl: "https://technosive.co.uk/images/logo/TechnosiveOG.webp",
   imgAltText: "Technosive",
   keywords: [
     "Innovation",
@@ -90,9 +90,6 @@ export const metadata: Metadata = {
   keywords: homeMetada.keywords,
   alternates: {
     canonical: homeMetada.url,
-  },
-  verification: {
-    google: "7pJ9AOhyY4Ln67j1g5_kYF2tyC8yxjtTwR76LFWWj58",
   },
   openGraph: social,
   twitter: social,

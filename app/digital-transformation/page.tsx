@@ -43,7 +43,7 @@ const digitalTransMetadata = {
     "Big data analytics",
     "Enterprise digitization",
   ],
-  imgUrl: "https://technosive.co.uk/images/logo/Technosive.webp",
+  imgUrl: "https://technosive.co.uk/images/logo/TechnosiveOG.webp",
   imgAltText: "Technosive",
 };
 
