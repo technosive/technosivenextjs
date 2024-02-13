@@ -65,17 +65,17 @@ const Careers = () => {
             <div className="">
               <SectionTitle
                 title="Join our Team"
-                // paragraph="Join Technosive's innovative team in software development, cybersecurity, and more. Be part of a dynamic workplace that values your skills and growth."
-                paragraph="Unfortunately, we have no openings. Connect on LinkedIn to get notified on our latest opportunities."
+                paragraph="Join Technosive's innovative team in software development, cybersecurity, and more. Be part of a dynamic workplace that values your skills and growth."
+                // paragraph="Unfortunately, we have no openings. Connect on LinkedIn to get notified on our latest opportunities."
                 center
                 mb="0"
               />
             </div>
-            {/* <div className="grid grid-cols-1 lg:grid-cols-2">
+            <div className="grid grid-cols-1 lg:grid-cols-2">
               {CareerData.map((item) => {
                 return <SingleCareer key={item.id} item={item} />;
               })}
-            </div> */}
+            </div>
             {/* <p className="text-body-color">
               Unfortunately there are no job opportunities
             </p> */}
