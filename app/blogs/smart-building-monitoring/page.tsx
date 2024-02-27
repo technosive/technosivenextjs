@@ -184,9 +184,9 @@ const BlogDetailsPage = () => {
                     benefits for occupants and owners alike.
                   </p>
                   <div className="mb-10 w-full overflow-hidden rounded">
-                    <div className="relative aspect-[97/80] w-full sm:aspect-[97/52]">
+                    <div className="relative aspect-[97/80] w-full sm:aspect-[97/80]">
                       <Image
-                        src="/images/blog/smart-building-monitoring/160.webp"
+                        src="/images/blog/smart-building-monitoring/160.png"
                         alt="image"
                         placeholder="blur"
                         blurDataURL="https://img.freepik.com/premium-vector/black-white-gradients-creative-project_88211-445.jpg"
@@ -480,7 +480,7 @@ const BlogDetailsPage = () => {
                     complimentary consultation on how to implement smart
                     building solutions tailored to your needs, contact{" "}
                     <Link
-                      href="malto:info@technosive.co.uk"
+                      href="mailto:info@technosive.co.uk"
                       className="text-primary underline"
                       target="_blank"
                       rel="noreferrer"
