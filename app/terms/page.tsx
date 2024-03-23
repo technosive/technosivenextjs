@@ -1,5 +1,6 @@
 import Title from "@/components/Common/Section Title Common/Title";
 import { Metadata } from "next";
+import Link from "next/link";
 
 const TosMetadata = {
   url: "https://technosive.co.uk/terms",
@@ -175,13 +176,13 @@ const Terms = () => {
                   </h1>
                   <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
                     If you have any questions, concerns, or feedback regarding
-                    these Terms, please contact us at &nbsp;
-                    <a
+                    these Terms, please contact us at{" "}
+                    <Link
                       href="mailto:info@technosive.co.uk"
                       className="text-primary underline"
                     >
                       info@technosive.co.uk
-                    </a>
+                    </Link>
                   </p>
                 </div>
               </div>

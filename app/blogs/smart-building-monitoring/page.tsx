@@ -186,7 +186,7 @@ const BlogDetailsPage = () => {
                   <div className="mb-10 w-full overflow-hidden rounded">
                     <div className="relative aspect-[97/80] w-full sm:aspect-[97/80]">
                       <Image
-                        src="/images/blog/smart-building-monitoring/160.png"
+                        src="/images/blog/smart-building-monitoring/index.webp"
                         alt="image"
                         placeholder="blur"
                         blurDataURL="https://img.freepik.com/premium-vector/black-white-gradients-creative-project_88211-445.jpg"
