@@ -6,7 +6,7 @@ import brandsData from "./brandsData";
 
 const Brands = () => {
   return (
-    <section className="md:py-20 lg:pb-28 lg:pt-0" id="partners">
+    <section className="py-4 md:py-20 lg:pb-28 lg:pt-0" id="partners">
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
