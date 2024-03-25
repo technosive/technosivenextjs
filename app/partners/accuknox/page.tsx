@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import AccuKnoxLogo from "../../../public/images/brands/AccuKnox/accuknox-logo-light.webp";
 
 const accuknoxMetadata = {
   url: "https://technosive.co.uk/partners/accuknox",
@@ -106,7 +107,7 @@ const AccuKnox = () => {
                 <div>
                   <Image
                     alt="Accuknox"
-                    src="/images/brands/accuknox/accuknox-logo-light.webp"
+                    src={AccuKnoxLogo}
                     unoptimized
                     width="200"
                     height="100"

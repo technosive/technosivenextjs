@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import FortinetLogo from "../../../public/images/brands/Fortinet/fortinet-logo.svg";
 
 const fortinetMetadata = {
   url: "https://technosive.co.uk/partners/fortinet",
@@ -99,7 +100,7 @@ const Fortinet = () => {
                 <div>
                   <Image
                     alt="Accuknox"
-                    src="/images/brands/fortinet/fortinet-logo.svg"
+                    src={FortinetLogo}
                     unoptimized
                     width="200"
                     height="100"
