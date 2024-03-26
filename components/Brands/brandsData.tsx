@@ -6,14 +6,14 @@ const brandsData: Brand[] = [
   {
     id: 1,
     name: "Fortinet",
-    href: "/partners/fortinet",
+    href: "/partnership/fortinet",
     image: fortinetLogo,
     imageLight: fortinetLogo,
   },
   {
     id: 2,
     name: "AccuKnox",
-    href: "/partners/accuknox",
+    href: "/partnership/accuknox",
     image: accuKnoxLogo,
     imageLight: accuKnoxLogo,
   },

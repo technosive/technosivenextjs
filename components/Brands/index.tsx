@@ -6,11 +6,11 @@ import brandsData from "./brandsData";
 
 const Brands = () => {
   return (
-    <section className="py-4 md:py-20 lg:pb-28 lg:pt-0" id="partners">
+    <section className="py-24 md:py-20 lg:py-28" id="partnerships">
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
-            <SectionTitle title="Our Partners" mb="2rem" center />
+            <SectionTitle title="Our Partnerships" mb="2rem" center />
             <div
               className="wow fadeInUp flex flex-wrap items-center justify-center rounded-sm bg-gray-400 px-8 py-8 dark:bg-gray-dark sm:px-10 md:px-[50px] md:py-[40px] xl:p-[50px] 2xl:px-[70px] 2xl:py-[60px]"
               data-wow-delay=".1s"

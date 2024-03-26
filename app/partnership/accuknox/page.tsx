@@ -105,14 +105,6 @@ const AccuKnox = () => {
             <div className="w-full px-4 lg:w-10/12">
               <div>
                 <div>
-                  <Image
-                    alt="Accuknox"
-                    src={AccuKnoxLogo}
-                    unoptimized
-                    width="200"
-                    height="100"
-                    className="mb-8"
-                  />
                   <h3 className="font-xl mb-4 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
                     Technosive is thrilled to announce our partnership with
                     AccuKnox!
