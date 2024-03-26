@@ -5,10 +5,10 @@ import React from "react";
 import FortinetLogo from "../../../public/images/brands/Fortinet/fortinet-logo.svg";
 
 const fortinetMetadata = {
-  url: "https://technosive.co.uk/partners/fortinet",
-  title: "Partners with Fortinet | Technosive",
+  url: "https://technosive.co.uk/partnership/fortinet",
+  title: "Partnership with Fortinet | Technosive",
   description:
-    "Technosive partners with Fortinet® for tailored cybersecurity solutions, bolstering digital security with expert support and seamless integration.",
+    "Partnership with Fortinet® for tailored cybersecurity solutions, bolstering digital security with expert support and seamless integration.",
   keywords: [
     "Technosive",
     "Fortinet",
@@ -30,7 +30,7 @@ const fortinetMetadata = {
     "Digital Assets",
     "Security posture",
   ],
-  imgUrl: "https://technosive.co.uk/images/brands/fortinet/opengraph.webp",
+  imgUrl: "https://technosive.co.uk/images/brands/Fortinet/opengraph.webp",
   imgAltText: "Technosive",
 };
 

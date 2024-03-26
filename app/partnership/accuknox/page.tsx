@@ -5,10 +5,10 @@ import React from "react";
 import AccuKnoxLogo from "../../../public/images/brands/AccuKnox/accuknox-logo-light.webp";
 
 const accuknoxMetadata = {
-  url: "https://technosive.co.uk/partners/accuknox",
-  title: "Partners with AccuKnox | Technosive",
+  url: "https://technosive.co.uk/partnership/accuknox",
+  title: "Partnership with AccuKnox | Technosive",
   description:
-    "Technosive partners with AccuKnox for top-tier cloud security solutions, including CNAPP platform, Kubernetes security, and expert consultation.",
+    "Partnership with AccuKnox for top-tier cloud security solutions, including CNAPP platform, Kubernetes security, and expert consultation.",
   keywords: [
     "Technosive",
     "Partnership",
