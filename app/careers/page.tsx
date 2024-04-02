@@ -71,7 +71,7 @@ const Careers = () => {
                 mb="0"
               />
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2">
+            <div className="mt-10 grid grid-cols-1 lg:grid-cols-2">
               {CareerData.map((item) => {
                 return <SingleCareer key={item.id} item={item} />;
               })}

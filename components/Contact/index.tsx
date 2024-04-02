@@ -25,7 +25,7 @@ const Contact = () => {
 
     axios
       .post(
-        "/api/sendEmail",
+        "api/sendEmail",
         {
           name: formData.name,
           email: formData.email,
@@ -43,6 +43,7 @@ const Contact = () => {
       .then((response) => {
         setFormData(initialFormData);
         setLoading(false);
+        console.log(response);
         toast.success("Email Sent Successfully!", {
           position: "bottom-center",
           autoClose: 4000,
@@ -55,6 +56,7 @@ const Contact = () => {
         });
       })
       .catch((error) => {
+        console.error(error);
         setFormData(initialFormData);
         setLoading(false);
         toast.error("Internal Server Error", {

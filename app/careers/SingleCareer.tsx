@@ -8,11 +8,8 @@ const SingleCareer = ({ item }: { item: Career }) => {
   const { url, jobDescription, jobTitle, tag } = item;
   return (
     <div className="m-5 flex">
-      <div className="group mx-2 mt-10 grid max-w-screen-md grid-cols-12 space-x-8 overflow-hidden rounded-lg bg-white py-4 shadow-three transition  dark:bg-gray-dark  sm:mx-auto">
-        <Link
-          href={url}
-          className="order-2 col-span-1 -ml-14 mt-4 text-left  sm:-order-1 sm:ml-4"
-        >
+      <div className="group mx-2 max-w-screen-md overflow-hidden  rounded-lg bg-white p-4 py-4 shadow-three transition  dark:bg-gray-dark  sm:mx-auto">
+        {/* <Link href={url} className="mt-4">
           <div className="group relative h-16 w-16 overflow-hidden rounded-lg">
             <Image
               src="favicon.ico"
@@ -23,19 +20,19 @@ const SingleCareer = ({ item }: { item: Career }) => {
               unoptimized
             />
           </div>
-        </Link>
-        <div className="col-span-11 flex flex-col pr-8 text-left sm:pl-4">
+        </Link> */}
+        <div className="col-span-11 flex flex-col text-left sm:pl-4">
           <h3 className="text-sm text-body-color">{tag}</h3>
           <Link
             href={url}
-            className="mb-3 flex flex-row items-center gap-x-1 overflow-hidden pr-7 text-base font-semibold transition-all hover:gap-x-3 dark:text-white sm:text-xl"
+            className="mb-3 line-clamp-1 flex flex-row items-center gap-x-1  overflow-hidden pr-7 text-base font-semibold transition-all hover:gap-x-3 dark:text-white sm:text-xl"
           >
             {jobTitle}
             <span className="">
               <IconArrowNarrowRight />
             </span>
           </Link>
-          <p className="overflow-hidden pr-7 text-sm text-body-color">
+          <p className="line-clamp-2 overflow-hidden pr-7 text-sm text-body-color">
             {jobDescription}
           </p>
         </div>

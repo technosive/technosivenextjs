@@ -1,5 +1,11 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
+import {
+  HOST,
+  RECEIVER_EMAIL_ADDRESS,
+  SENDER_EMAIL_ADDRESS,
+  SENDER_EMAIL_PASSWORD,
+} from "./constants";
 
 export interface Email {
   name: string;
@@ -16,16 +22,16 @@ export async function POST(request) {
       await request.json();
 
     const smtpTransport = nodemailer.createTransport({
-      service: process.env.HOST,
+      service: HOST,
       auth: {
-        user: process.env.SENDER_EMAIL_ADDRESS,
-        pass: process.env.SENDER_EMAIL_PASSWORD,
+        user: SENDER_EMAIL_ADDRESS,
+        pass: SENDER_EMAIL_PASSWORD,
       },
     });
 
     const mailOptions = {
-      from: process.env.SENDER_EMAIL_ADDRESS,
-      to: process.env.RECEIVER_EMAIL_ADDRESS,
+      from: SENDER_EMAIL_ADDRESS,
+      to: RECEIVER_EMAIL_ADDRESS,
       subject: "Lead From Website",
       html: `${
         subscriber
@@ -67,3 +73,5 @@ export async function POST(request) {
     return NextResponse.json({ message: "Error" }, { status: error.status });
   }
 }
+
+export const dynamic = "force-static";
