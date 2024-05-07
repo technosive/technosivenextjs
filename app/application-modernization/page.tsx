@@ -54,6 +54,17 @@ export const metadata: Metadata = {
   keywords: appModMetadata.keywords,
   openGraph: social,
   twitter: social,
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 const AppModernization = () => {
