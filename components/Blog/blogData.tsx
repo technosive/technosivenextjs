@@ -41,20 +41,5 @@ const blogData: Blog[] = [
     tags: ["IOT"],
     publishDate: "15/02/2024",
   },
-  {
-    id: 3,
-    title: "Tips to quickly improve your coding speed.",
-    path: "/blogs/tips-to-improve-codings-speed",
-    paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
-    image: blogImg3,
-    author: {
-      name: "Lethium Deo",
-      image: blogAuthorImg3,
-      designation: "Graphic Designer",
-    },
-    tags: ["design"],
-    publishDate: "2025",
-  },
 ];
 export default blogData;

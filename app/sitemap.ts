@@ -16,6 +16,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: `weekly`,
       priority: 0.8,
     },
+
+    // * Blogs
     {
       url: `${baseUrl}/blogs/revolutionizing-healthcare`,
       lastModified: new Date(),
@@ -23,10 +25,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/application-modernization`,
+      url: `${baseUrl}/blogs/smart-building-monitoring`,
       lastModified: new Date(),
       changeFrequency: `weekly`,
-      priority: 0.6,
+      priority: 0.7,
     },
     {
       url: `${baseUrl}/terms`,
@@ -52,6 +54,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: `monthly`,
       priority: 0.5,
     },
+
+    // * Services
     {
       url: `${baseUrl}/cloud-computing`,
       lastModified: new Date(),
@@ -81,6 +85,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: `weekly`,
       priority: 0.5,
+    },
+    {
+      url: `${baseUrl}/application-modernization`,
+      lastModified: new Date(),
+      changeFrequency: `weekly`,
+      priority: 0.6,
     },
   ];
 }
