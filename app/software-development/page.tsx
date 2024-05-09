@@ -58,6 +58,7 @@ const social = {
       alt: softwareMetadata.imgAltText,
     },
   ],
+  url: softwareMetadata.url,
 };
 
 export const metadata: Metadata = {

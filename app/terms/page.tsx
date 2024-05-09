@@ -20,6 +20,7 @@ const social = {
       alt: TosMetadata.imgAltText,
     },
   ],
+  url: TosMetadata.url,
 };
 export const metadata: Metadata = {
   title: TosMetadata.title,

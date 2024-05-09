@@ -48,6 +48,7 @@ const social = {
       alt: cBlog.imgAltText,
     },
   ],
+  url: cBlog.postUrl,
 };
 
 export const metadata: Metadata = {

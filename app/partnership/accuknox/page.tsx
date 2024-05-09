@@ -59,6 +59,7 @@ export async function generateMetadata(): Promise<Metadata> {
           alt: accuknoxMetadata.imgAltText,
         },
       ],
+      url: accuknoxMetadata.url,
     },
     robots: {
       index: true,

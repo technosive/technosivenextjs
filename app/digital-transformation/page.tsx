@@ -56,6 +56,7 @@ const social = {
       alt: digitalTransMetadata.imgAltText,
     },
   ],
+  url: digitalTransMetadata.url,
 };
 
 export const metadata: Metadata = {

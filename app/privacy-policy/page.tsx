@@ -28,6 +28,7 @@ const social = {
       alt: privacyMetadata.imgAltText,
     },
   ],
+  url: privacyMetadata.url,
 };
 export const metadata: Metadata = {
   title: privacyMetadata.title,

@@ -71,6 +71,7 @@ const social = {
       alt: FemaleTechMetadata.imgAltText,
     },
   ],
+  url: FemaleTechMetadata.url,
 };
 
 export const metadata: Metadata = {

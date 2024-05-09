@@ -42,6 +42,7 @@ const social = {
       alt: appModMetadata.imgAltText,
     },
   ],
+  url: appModMetadata.url,
 };
 
 export const metadata: Metadata = {

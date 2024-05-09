@@ -53,6 +53,7 @@ export async function generateMetadata(): Promise<Metadata> {
           alt: fortinetMetadata.imgAltText,
         },
       ],
+      url: fortinetMetadata.url,
     },
     robots: {
       index: true,

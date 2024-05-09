@@ -44,6 +44,7 @@ const social = {
       alt: CareerMetadata.imgAltText,
     },
   ],
+  url: CareerMetadata.url,
 };
 
 export const metadata: Metadata = {

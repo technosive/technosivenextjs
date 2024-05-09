@@ -61,6 +61,7 @@ const social = {
       alt: BackendevMetadata.imgAltText,
     },
   ],
+  url: BackendevMetadata.url,
 };
 
 export const metadata: Metadata = {

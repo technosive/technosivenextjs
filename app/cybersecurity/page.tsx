@@ -54,6 +54,7 @@ const social = {
       alt: cyberMetadata.imgAltText,
     },
   ],
+  url: cyberMetadata.url,
 };
 
 export const metadata: Metadata = {

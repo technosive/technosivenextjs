@@ -83,6 +83,7 @@ const social = {
       alt: homeMetada.imgAltText,
     },
   ],
+  url: homeMetada.url,
 };
 export const metadata: Metadata = {
   title: homeMetada.title,

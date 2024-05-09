@@ -42,6 +42,7 @@ const social = {
       alt: cloudMetadata.imgAltText,
     },
   ],
+  url: cloudMetadata.url,
 };
 
 export const metadata: Metadata = {

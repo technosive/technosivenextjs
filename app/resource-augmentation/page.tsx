@@ -54,6 +54,7 @@ const social = {
       alt: resourceMetadata.imgAltText,
     },
   ],
+  url: resourceMetadata.url,
 };
 
 export const metadata: Metadata = {

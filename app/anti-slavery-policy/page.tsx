@@ -30,6 +30,7 @@ const social = {
       alt: AntiSlaveryMetadata.imgAltText,
     },
   ],
+  url: AntiSlaveryMetadata.url,
 };
 export const metadata: Metadata = {
   title: AntiSlaveryMetadata.title,
