@@ -416,7 +416,7 @@ const page = () => {
                   </p>
 
                   <p className="mb-4 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    Visit &nbsp;
+                    Visit{" "}
                     <Link
                       href="https://cogniz.co"
                       className="text-primary underline"
@@ -424,8 +424,8 @@ const page = () => {
                       rel="noreferrer"
                     >
                       cogniz.co
-                    </Link>
-                    , a RAG system developed by us.
+                    </Link>{" "}
+                    for more details.
                   </p>
 
                   <div className="items-center justify-between sm:flex">
