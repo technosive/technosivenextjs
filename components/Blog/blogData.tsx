@@ -1,7 +1,7 @@
 import { Blog } from "@/types/blog";
 
 //Blog Images
-import blogImg3 from "../../public/images/blog/blog-03.webp";
+import blogImg3 from "../../public/images/blog/RAG/RAG.webp";
 import blogImg1 from "../../public/images/blog/revolutionizing-healthcare/160.webp";
 import blogImg2 from "../../public/images/blog/smart-building-monitoring/160.webp";
 
@@ -16,7 +16,7 @@ const blogData: Blog[] = [
     title: "Revolutionizing Healthcare: The Imperative of Smart Hospitals",
     path: "/blogs/revolutionizing-healthcare",
     paragraph:
-      "In the dynamic realm of healthcare, the need for smart hospitals is unequivocal. At Technosive...",
+      "In the dynamic realm of healthcare, the need for smart hospitals is unequivocal. At Technosive, we understand that optimized healthcare systems are not only vital",
     image: blogImg1,
     author: {
       name: "Samual Joshi",
@@ -28,10 +28,10 @@ const blogData: Blog[] = [
   },
   {
     id: 2,
-    title: "Smart Building Monitoring",
+    title: "Smart Building Monitoring System, The Future of Smart Buildings",
     path: "/blogs/smart-building-monitoring",
     paragraph:
-      "In the realm of technological progress, smart buildings stand out as beacons of innovation, promising enhanced efficiency and sustainability. At the core of this revolution...",
+      "In the realm of technological progress, smart buildings stand out as beacons of innovation, promising enhanced efficiency and sustainability.",
     image: blogImg2,
     author: {
       name: "Musharof Chy",
@@ -40,6 +40,21 @@ const blogData: Blog[] = [
     },
     tags: ["IOT"],
     publishDate: "15/02/2024",
+  },
+  {
+    id: 3,
+    title: "Enhancing Business Efficiency with Retrieval-Augmented Generation",
+    path: "/blogs/retrieval-augmented-generation",
+    paragraph:
+      "In the realm of artificial intelligence, one innovative technology making waves in the business world is Retrieval-Augmented Generation (RAG). This cutting-edge approach bridges the gap between general question-answering",
+    image: blogImg3,
+    author: {
+      name: "Alex Smith",
+      image: blogAuthorImg3,
+      designation: "Content Writer",
+    },
+    tags: ["IOT"],
+    publishDate: "13/05/2024",
   },
 ];
 export default blogData;
