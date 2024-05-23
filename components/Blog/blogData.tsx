@@ -12,22 +12,20 @@ import blogAuthorImg1 from "../../public/images/blog/revolutionizing-healthcare/
 
 const blogData: Blog[] = [
   {
-    id: 1,
-    title: "Revolutionizing Healthcare: The Imperative of Smart Hospitals",
-    path: "/blogs/revolutionizing-healthcare",
+    title: "Enhancing Business Efficiency with Retrieval-Augmented Generation",
+    path: "/blogs/retrieval-augmented-generation",
     paragraph:
-      "In the dynamic realm of healthcare, the need for smart hospitals is unequivocal. At Technosive, we understand that optimized healthcare systems are not only vital",
-    image: blogImg1,
+      "In the realm of artificial intelligence, one innovative technology making waves in the business world is Retrieval-Augmented Generation (RAG). This cutting-edge approach bridges the gap between general question-answering",
+    image: blogImg3,
     author: {
-      name: "Samual Joshi",
-      image: blogAuthorImg1,
-      designation: "Software Developer",
+      name: "Alex Smith",
+      image: blogAuthorImg3,
+      designation: "Content Writer",
     },
-    tags: ["Healthcare"],
-    publishDate: "10/01/2024",
+    tags: ["IOT"],
+    publishDate: "13/05/2024",
   },
   {
-    id: 2,
     title: "Smart Building Monitoring System, The Future of Smart Buildings",
     path: "/blogs/smart-building-monitoring",
     paragraph:
@@ -42,19 +40,19 @@ const blogData: Blog[] = [
     publishDate: "15/02/2024",
   },
   {
-    id: 3,
-    title: "Enhancing Business Efficiency with Retrieval-Augmented Generation",
-    path: "/blogs/retrieval-augmented-generation",
+    title: "Revolutionizing Healthcare: The Imperative of Smart Hospitals",
+    path: "/blogs/revolutionizing-healthcare",
     paragraph:
-      "In the realm of artificial intelligence, one innovative technology making waves in the business world is Retrieval-Augmented Generation (RAG). This cutting-edge approach bridges the gap between general question-answering",
-    image: blogImg3,
+      "In the dynamic realm of healthcare, the need for smart hospitals is unequivocal. At Technosive, we understand that optimized healthcare systems are not only vital",
+    image: blogImg1,
     author: {
-      name: "Alex Smith",
-      image: blogAuthorImg3,
-      designation: "Content Writer",
+      name: "Samual Joshi",
+      image: blogAuthorImg1,
+      designation: "Software Developer",
     },
-    tags: ["IOT"],
-    publishDate: "13/05/2024",
+    tags: ["Healthcare"],
+    publishDate: "10/01/2024",
   },
-];
+].map((item, index) => ({ id: index + 1, ...item }));
+
 export default blogData;

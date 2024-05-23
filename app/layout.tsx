@@ -5,8 +5,6 @@ import Footer from "@/components/Footer";
 import GoogleAnalytics from "@/components/GoogleAnalytics/GoogleAnalytics";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
-import { Metadata } from "next";
-import dynamic from "next/dynamic";
 import { Inter } from "next/font/google";
 import NextTopLoader from "nextjs-toploader";
 import "node_modules/react-modal-video/css/modal-video.css";

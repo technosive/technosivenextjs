@@ -25,6 +25,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${baseUrl}/blogs/retrieval-augmented-generation`,
+      lastModified: new Date(),
+      changeFrequency: `weekly`,
+      priority: 0.7,
+    },
+    {
       url: `${baseUrl}/blogs/smart-building-monitoring`,
       lastModified: new Date(),
       changeFrequency: `weekly`,
@@ -57,37 +63,37 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // * Services
     {
-      url: `${baseUrl}/cloud-computing`,
+      url: `${baseUrl}/services/cloud-computing`,
       lastModified: new Date(),
       changeFrequency: `weekly`,
       priority: 0.5,
     },
     {
-      url: `${baseUrl}/cybersecurity`,
+      url: `${baseUrl}/services/ai-machine-learning`,
       lastModified: new Date(),
       changeFrequency: `weekly`,
       priority: 0.5,
     },
     {
-      url: `${baseUrl}/digital-transformation`,
+      url: `${baseUrl}/services/azure-devops`,
       lastModified: new Date(),
       changeFrequency: `weekly`,
       priority: 0.5,
     },
     {
-      url: `${baseUrl}/resource-augmentation`,
+      url: `${baseUrl}/services/resource-augmentation`,
       lastModified: new Date(),
       changeFrequency: `weekly`,
       priority: 0.5,
     },
     {
-      url: `${baseUrl}/software-development`,
+      url: `${baseUrl}/services/azure-security`,
       lastModified: new Date(),
       changeFrequency: `weekly`,
       priority: 0.5,
     },
     {
-      url: `${baseUrl}/application-modernization`,
+      url: `${baseUrl}/services/application-modernization`,
       lastModified: new Date(),
       changeFrequency: `weekly`,
       priority: 0.6,

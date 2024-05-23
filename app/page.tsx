@@ -10,7 +10,7 @@ const AboutSectionTwo = dynamic(
 const Blog = dynamic(() => import("@/components/Blog"));
 const Brands = dynamic(() => import("@/components/Brands"));
 const Contact = dynamic(() => import("@/components/Contact"));
-const Features = dynamic(() => import("@/components/Features"));
+const Features = dynamic(() => import("@/components/Services"));
 const Hero = dynamic(() => import("@/components/Hero"));
 const Pricing = dynamic(() => import("@/components/Pricing"));
 const Testimonials = dynamic(() => import("@/components/Testimonials"));
