@@ -1,11 +1,16 @@
 "use client";
 
-import axios from "axios";
+import emailjs from "@emailjs/browser";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
+// emailjs Configuration
+const TEMPLATE_ID = "template_1uh7056"; // Technosive Template in EmailJS
+const SERVICE_ID = "service_e79zwla"; // Technosive Service in EmailJS
+const PUBLIC_KEY = "zswr27pZsZktE5jOw";
 
 const NewsLatterBox = () => {
   const initialFormData = { name: "", email: "" };
@@ -18,20 +23,22 @@ const NewsLatterBox = () => {
     e.preventDefault();
     setLoading(true);
 
-    axios
-      .post(
-        "/api/sendEmail",
-        {
-          name: formData.name,
-          email: formData.email,
-          subscriber: true,
-        },
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        },
-      )
+    const templateParams = {
+      lead_name: formData.name,
+      lead_email: formData.email,
+      lead_phone_Number: "Message Sent from Subscriber Form",
+      lead_organization: "Message Sent from Subscriber Form",
+      lead_message: "Message Sent from Subscriber Form",
+    };
+
+    const emailPromise = emailjs.send(
+      SERVICE_ID,
+      TEMPLATE_ID,
+      templateParams,
+      PUBLIC_KEY,
+    );
+
+    emailPromise
       .then((response) => {
         setFormData(initialFormData);
         setLoading(false);

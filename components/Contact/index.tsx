@@ -1,11 +1,18 @@
 "use client";
 
+import emailjs from "@emailjs/browser";
 import axios from "axios";
 import { useTheme } from "next-themes";
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import NewsLatterBox from "./NewsLatterBox";
+import Input from "./input";
+
+// emailjs Configuration
+const TEMPLATE_ID = "template_1uh7056"; // Technosive Template in EmailJS
+const SERVICE_ID = "service_e79zwla"; // Technosive Service in EmailJS
+const PUBLIC_KEY = "zswr27pZsZktE5jOw";
 
 const Contact = () => {
   const initialFormData = {
@@ -17,32 +24,30 @@ const Contact = () => {
   };
   const [formData, setFormData] = useState(initialFormData);
   const [loading, setLoading] = useState(false);
-
   const { theme, setTheme } = useTheme();
+
   const handleFormSubmit = (e: any) => {
     e.preventDefault();
     setLoading(true);
 
-    axios
-      .post(
-        "api/sendEmail",
-        {
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          org: formData.org,
-          message: formData.message,
-          subscriber: false,
-        },
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        },
-      )
+    const templateParams = {
+      lead_name: formData.name,
+      lead_email: formData.email,
+      lead_phone_Number: formData.phone,
+      lead_organization: formData.org,
+      lead_message: formData.message,
+    };
+
+    const emailPromise = emailjs.send(
+      SERVICE_ID,
+      TEMPLATE_ID,
+      templateParams,
+      PUBLIC_KEY,
+    );
+
+    emailPromise
       .then((response) => {
         setFormData(initialFormData);
-        console.log(response);
         setLoading(false);
         toast.success("Email Sent Successfully!", {
           position: "bottom-center",
@@ -59,7 +64,7 @@ const Contact = () => {
         console.error(error);
         setFormData(initialFormData);
         setLoading(false);
-        toast.error("Internal Server Error", {
+        toast.error("Unable to Send your Message", {
           position: "bottom-center",
           autoClose: 4000,
           hideProgressBar: false,
@@ -107,14 +112,13 @@ const Contact = () => {
                       >
                         Your Name
                       </label>
-                      <input
+                      <Input
                         required
                         name="name"
                         type="text"
-                        placeholder="Enter your name"
                         value={formData.name}
                         onChange={handleInputChange}
-                        className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+                        placeholder="Enter your name"
                       />
                     </div>
                   </div>
@@ -126,14 +130,13 @@ const Contact = () => {
                       >
                         Your Email
                       </label>
-                      <input
+                      <Input
                         required
                         name="email"
                         type="email"
-                        placeholder="Enter your email"
                         value={formData.email}
                         onChange={handleInputChange}
-                        className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+                        placeholder="Enter your Email"
                       />
                     </div>
                   </div>
@@ -145,13 +148,13 @@ const Contact = () => {
                       >
                         Your Phone Number
                       </label>
-                      <input
+                      <Input
+                        required
                         name="phone"
                         type="text"
                         placeholder="Enter your Phone Number"
                         value={formData.phone}
                         onChange={handleInputChange}
-                        className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                       />
                     </div>
                   </div>
@@ -163,13 +166,12 @@ const Contact = () => {
                       >
                         Your Organization
                       </label>
-                      <input
+                      <Input
                         name="org"
                         type="text"
-                        placeholder="Enter your organization name"
+                        placeholder="Enter your organization"
                         value={formData.org}
                         onChange={handleInputChange}
-                        className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                       />
                     </div>
                   </div>

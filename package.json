@@ -10,6 +10,7 @@
     "sitemap": "next-sitemap --config next-sitemap.config.js"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
     "@tabler/icons-react": "^2.46.0",
     "axios": "^1.6.5",
     "client-only": "^0.0.1",
