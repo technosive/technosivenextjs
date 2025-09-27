@@ -6,7 +6,7 @@ import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 const Hero = () => {
   const [textAnimation] = useTypewriter({
-    words: ["Innovation", "Transformation", "Modernization", "Digitalization"],
+    words: ["Cybersecurity", "Digital Protection", "Threat Defense", "Security Compliance"],
     loop: true,
     typeSpeed: 90,
     delaySpeed: 600,
@@ -33,15 +33,11 @@ const Hero = () => {
                   </h1>
                 </div>
                 <p className="mb-12 text-center text-sm !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  We are dedicated to pioneering solutions that transcend
-                  boundaries and redefine industries. With a passion for
-                  cutting-edge technology, we embark on a journey to empower
-                  businesses and individuals through seamless integration of the
-                  digital landscape.
+                  We are dedicated to providing comprehensive cybersecurity solutions that protect your digital assets and safeguard your business. With expertise in cutting-edge security technologies, we empower organizations to defend against evolving threats and ensure robust protection across their entire digital infrastructure.
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
-                    href="https://outlook.office365.com/owa/calendar/AbdulSalamsCalendar@technosive.co.uk/bookings/"
+                    href="https://calendly.com/abdul-salamguk/30min"
                     target="_blank"
                     className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
@@ -68,62 +64,49 @@ const Hero = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle
-              cx="277"
-              cy="63"
-              r="225"
+            {/* Security shield pattern */}
+            <path
+              d="M225 50C225 50 150 80 150 150V250C150 320 225 400 225 400C225 400 300 320 300 250V150C300 80 225 50 225 50Z"
               fill="url(#paint0_linear_25:217)"
+              opacity="0.3"
             />
-            <circle
-              cx="17.9997"
-              cy="182"
-              r="18"
-              fill="url(#paint1_radial_25:217)"
-            />
-            <circle
-              cx="76.9997"
-              cy="288"
-              r="34"
-              fill="url(#paint2_radial_25:217)"
-            />
-            <circle
-              cx="325.486"
-              cy="302.87"
-              r="180"
-              transform="rotate(-37.6852 325.486 302.87)"
-              fill="url(#paint3_linear_25:217)"
-            />
-            <circle
-              opacity="0.8"
-              cx="184.521"
-              cy="315.521"
-              r="132.862"
-              transform="rotate(114.874 184.521 315.521)"
+            {/* Network nodes pattern */}
+            <circle cx="100" cy="150" r="8" fill="url(#paint1_radial_25:217)" />
+            <circle cx="200" cy="100" r="12" fill="url(#paint2_radial_25:217)" />
+            <circle cx="350" cy="200" r="10" fill="url(#paint1_radial_25:217)" />
+            <circle cx="300" cy="350" r="15" fill="url(#paint2_radial_25:217)" />
+            <circle cx="150" cy="300" r="9" fill="url(#paint1_radial_25:217)" />
+            
+            {/* Connection lines */}
+            <line x1="100" y1="150" x2="200" y2="100" stroke="url(#paint3_linear_25:217)" strokeWidth="2" opacity="0.5"/>
+            <line x1="200" y1="100" x2="350" y2="200" stroke="url(#paint3_linear_25:217)" strokeWidth="2" opacity="0.5"/>
+            <line x1="350" y1="200" x2="300" y2="350" stroke="url(#paint3_linear_25:217)" strokeWidth="2" opacity="0.5"/>
+            <line x1="300" y1="350" x2="150" y2="300" stroke="url(#paint3_linear_25:217)" strokeWidth="2" opacity="0.5"/>
+            <line x1="150" y1="300" x2="100" y2="150" stroke="url(#paint3_linear_25:217)" strokeWidth="2" opacity="0.5"/>
+            
+            {/* Digital protection waves */}
+            <path
+              d="M50 400Q100 350 150 400T250 400Q300 350 350 400T450 400"
               stroke="url(#paint4_linear_25:217)"
+              strokeWidth="3"
+              fill="none"
+              opacity="0.4"
             />
-            <circle
-              opacity="0.8"
-              cx="356"
-              cy="290"
-              r="179.5"
-              transform="rotate(-30 356 290)"
-              stroke="url(#paint5_linear_25:217)"
+            <path
+              d="M30 450Q80 400 130 450T230 450Q280 400 330 450T430 450"
+              stroke="url(#paint4_linear_25:217)"
+              strokeWidth="2"
+              fill="none"
+              opacity="0.3"
             />
-            <circle
-              opacity="0.8"
-              cx="191.659"
-              cy="302.659"
-              r="133.362"
-              transform="rotate(133.319 191.659 302.659)"
-              fill="url(#paint6_linear_25:217)"
-            />
+            
             <defs>
               <linearGradient
                 id="paint0_linear_25:217"
-                x1="-54.5003"
-                y1="-178"
-                x2="222"
-                y2="288"
+                x1="225"
+                y1="50"
+                x2="225"
+                y2="400"
                 gradientUnits="userSpaceOnUse"
               >
                 <stop stopColor="#4A6CF7" />
@@ -135,10 +118,10 @@ const Hero = () => {
                 cy="0"
                 r="1"
                 gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(17.9997 182) rotate(90) scale(18)"
+                gradientTransform="translate(100 150) rotate(90) scale(8)"
               >
                 <stop offset="0.145833" stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.08" />
+                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.8" />
               </radialGradient>
               <radialGradient
                 id="paint2_radial_25:217"
@@ -146,54 +129,32 @@ const Hero = () => {
                 cy="0"
                 r="1"
                 gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(76.9997 288) rotate(90) scale(34)"
+                gradientTransform="translate(200 100) rotate(90) scale(12)"
               >
                 <stop offset="0.145833" stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.08" />
+                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.6" />
               </radialGradient>
               <linearGradient
                 id="paint3_linear_25:217"
-                x1="226.775"
-                y1="-66.1548"
-                x2="292.157"
-                y2="351.421"
+                x1="0"
+                y1="0"
+                x2="1"
+                y2="1"
                 gradientUnits="userSpaceOnUse"
               >
                 <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.3" />
               </linearGradient>
               <linearGradient
                 id="paint4_linear_25:217"
-                x1="184.521"
-                y1="182.159"
-                x2="184.521"
-                y2="448.882"
+                x1="0"
+                y1="0"
+                x2="1"
+                y2="0"
                 gradientUnits="userSpaceOnUse"
               >
                 <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="white" stopOpacity="0" />
-              </linearGradient>
-              <linearGradient
-                id="paint5_linear_25:217"
-                x1="356"
-                y1="110"
-                x2="356"
-                y2="470"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="white" stopOpacity="0" />
-              </linearGradient>
-              <linearGradient
-                id="paint6_linear_25:217"
-                x1="118.524"
-                y1="29.2497"
-                x2="166.965"
-                y2="338.63"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.2" />
               </linearGradient>
             </defs>
           </svg>
@@ -206,98 +167,114 @@ const Hero = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
+            {/* Firewall protection lines */}
             <path
-              d="M5.88928 72.3303C33.6599 66.4798 101.397 64.9086 150.178 105.427C211.155 156.076 229.59 162.093 264.333 166.607C299.076 171.12 337.718 183.657 362.889 212.24"
+              d="M0 100L50 80L100 120L150 60L200 100L250 40L300 90L350 50L364 80"
               stroke="url(#paint0_linear_25:218)"
+              strokeWidth="3"
+              fill="none"
+              opacity="0.6"
             />
             <path
-              d="M-22.1107 72.3303C5.65989 66.4798 73.3965 64.9086 122.178 105.427C183.155 156.076 201.59 162.093 236.333 166.607C271.076 171.12 309.718 183.657 334.889 212.24"
+              d="M0 130L50 110L100 150L150 90L200 130L250 70L300 120L350 80L364 110"
               stroke="url(#paint1_linear_25:218)"
+              strokeWidth="2"
+              fill="none"
+              opacity="0.4"
             />
             <path
-              d="M-53.1107 72.3303C-25.3401 66.4798 42.3965 64.9086 91.1783 105.427C152.155 156.076 170.59 162.093 205.333 166.607C240.076 171.12 278.718 183.657 303.889 212.24"
+              d="M0 160L50 140L100 180L150 120L200 160L250 100L300 150L350 110L364 140"
               stroke="url(#paint2_linear_25:218)"
+              strokeWidth="1.5"
+              fill="none"
+              opacity="0.3"
             />
+            
+            {/* Security nodes */}
+            <circle cx="50" cy="80" r="6" fill="url(#paint3_radial_25:218)" />
+            <circle cx="100" cy="120" r="8" fill="url(#paint4_radial_25:218)" />
+            <circle cx="150" cy="60" r="5" fill="url(#paint3_radial_25:218)" />
+            <circle cx="200" cy="100" r="7" fill="url(#paint4_radial_25:218)" />
+            <circle cx="250" cy="40" r="6" fill="url(#paint3_radial_25:218)" />
+            <circle cx="300" cy="90" r="8" fill="url(#paint4_radial_25:218)" />
+            <circle cx="350" cy="50" r="5" fill="url(#paint3_radial_25:218)" />
+            
+            {/* Digital shield outline */}
             <path
-              d="M-98.1618 65.0889C-68.1416 60.0601 4.73364 60.4882 56.0734 102.431C120.248 154.86 139.905 161.419 177.137 166.956C214.37 172.493 255.575 186.165 281.856 215.481"
-              stroke="url(#paint3_linear_25:218)"
+              d="M182 20C182 20 150 35 150 70V120C150 155 182 190 182 190C182 190 214 155 214 120V70C214 35 182 20 182 20Z"
+              stroke="url(#paint5_linear_25:218)"
+              strokeWidth="2"
+              fill="none"
+              opacity="0.5"
             />
-            <circle
-              opacity="0.8"
-              cx="214.505"
-              cy="60.5054"
-              r="49.7205"
-              transform="rotate(-13.421 214.505 60.5054)"
-              stroke="url(#paint4_linear_25:218)"
-            />
-            <circle cx="220" cy="63" r="43" fill="url(#paint5_radial_25:218)" />
+            
             <defs>
               <linearGradient
                 id="paint0_linear_25:218"
-                x1="184.389"
-                y1="69.2405"
-                x2="184.389"
-                y2="212.24"
+                x1="0"
+                y1="100"
+                x2="364"
+                y2="100"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" />
+                <stop stopColor="#4A6CF7" stopOpacity="0.8" />
+                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.2" />
               </linearGradient>
               <linearGradient
                 id="paint1_linear_25:218"
-                x1="156.389"
-                y1="69.2405"
-                x2="156.389"
-                y2="212.24"
+                x1="0"
+                y1="130"
+                x2="364"
+                y2="130"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" />
+                <stop stopColor="#4A6CF7" stopOpacity="0.6" />
+                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.1" />
               </linearGradient>
               <linearGradient
                 id="paint2_linear_25:218"
-                x1="125.389"
-                y1="69.2405"
-                x2="125.389"
-                y2="212.24"
+                x1="0"
+                y1="160"
+                x2="364"
+                y2="160"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" />
-              </linearGradient>
-              <linearGradient
-                id="paint3_linear_25:218"
-                x1="93.8507"
-                y1="67.2674"
-                x2="89.9278"
-                y2="210.214"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" />
-              </linearGradient>
-              <linearGradient
-                id="paint4_linear_25:218"
-                x1="214.505"
-                y1="10.2849"
-                x2="212.684"
-                y2="99.5816"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
+                <stop stopColor="#4A6CF7" stopOpacity="0.4" />
+                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.1" />
               </linearGradient>
               <radialGradient
-                id="paint5_radial_25:218"
+                id="paint3_radial_25:218"
                 cx="0"
                 cy="0"
                 r="1"
                 gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(220 63) rotate(90) scale(43)"
+                gradientTransform="translate(50 80) rotate(90) scale(6)"
               >
-                <stop offset="0.145833" stopColor="white" stopOpacity="0" />
-                <stop offset="1" stopColor="white" stopOpacity="0.08" />
+                <stop offset="0.145833" stopColor="#4A6CF7" stopOpacity="0" />
+                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.7" />
               </radialGradient>
+              <radialGradient
+                id="paint4_radial_25:218"
+                cx="0"
+                cy="0"
+                r="1"
+                gradientUnits="userSpaceOnUse"
+                gradientTransform="translate(100 120) rotate(90) scale(8)"
+              >
+                <stop offset="0.145833" stopColor="#4A6CF7" stopOpacity="0" />
+                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.5" />
+              </radialGradient>
+              <linearGradient
+                id="paint5_linear_25:218"
+                x1="182"
+                y1="20"
+                x2="182"
+                y2="190"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#4A6CF7" />
+                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.3" />
+              </linearGradient>
             </defs>
           </svg>
         </div>

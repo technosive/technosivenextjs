@@ -33,9 +33,8 @@ const Footer = () => {
                   />
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                  Your Partner for Innovation, Transformation, and Security.
-                  Committed to driving technological evolution and business
-                  transformation.
+                  Your Trusted Cybersecurity Partner for Protection, Compliance, and Innovation.
+                  Committed to safeguarding your digital assets and ensuring regulatory compliance.
                 </p>
                 <div className="flex items-center">
                   <a

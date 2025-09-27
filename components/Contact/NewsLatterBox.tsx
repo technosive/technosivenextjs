@@ -84,7 +84,7 @@ const NewsLatterBox = () => {
     >
       <ToastContainer />
       <h3 className="mb-4 text-2xl font-bold leading-tight text-black dark:text-white">
-        Subscribe to receive future updates
+        Subscribe to receive cybersecurity alerts and updates
       </h3>
       <p className="mb-11 border-b border-body-color border-opacity-25 pb-11 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-25"></p>
       <form onSubmit={handleFormSubmit}>
@@ -345,10 +345,10 @@ export default NewsLatterBox;
 
 const Loader = () => {
   return (
-    <div
-      className="inline-block h-4 w-4 animate-spin rounded-full border-[3px] border-current border-t-transparent text-white dark:text-white"
-      role="status"
-      aria-label="loading"
-    ></div>
+    <div className="flex items-center justify-center space-x-2">
+      <div className="h-4 w-4 animate-pulse rounded-sm bg-primary"></div>
+      <div className="h-4 w-4 animate-pulse rounded-sm bg-primary" style={{ animationDelay: '0.2s' }}></div>
+      <div className="h-4 w-4 animate-pulse rounded-sm bg-primary" style={{ animationDelay: '0.4s' }}></div>
+    </div>
   );
 };

@@ -100,7 +100,7 @@ const Contact = () => {
                 Contact Us
               </h2>
               <p className="mb-12 text-base font-medium text-body-color">
-                Our support team will get back to you ASAP via email.
+                Our cybersecurity experts will respond promptly to assess your security requirements and provide tailored protection solutions.
               </p>
               <form onSubmit={handleFormSubmit}>
                 <div className="-mx-4 flex flex-wrap">
@@ -220,10 +220,10 @@ export default Contact;
 
 const Loader = () => {
   return (
-    <div
-      className="inline-block h-4 w-4 animate-spin rounded-full border-[3px] border-current border-t-transparent text-white dark:text-white"
-      role="status"
-      aria-label="loading"
-    ></div>
+    <div className="flex items-center justify-center space-x-2">
+      <div className="h-4 w-4 animate-pulse rounded-sm bg-primary"></div>
+      <div className="h-4 w-4 animate-pulse rounded-sm bg-primary" style={{ animationDelay: '0.2s' }}></div>
+      <div className="h-4 w-4 animate-pulse rounded-sm bg-primary" style={{ animationDelay: '0.4s' }}></div>
+    </div>
   );
 };

@@ -9,7 +9,7 @@ const Features = () => {
         <div className="container">
           <SectionTitle
             title="Our Services"
-            paragraph="Our services combine innovation, strategic planning, and cutting-edge technologies for your business. From consulting expertise you need for sustainable growth."
+            paragraph="Our services combine innovation, strategic planning, and cutting-edge cybersecurity technologies for your business. From expert consulting to comprehensive protection, we provide the security expertise you need for sustainable growth and digital resilience."
             center
           />
 

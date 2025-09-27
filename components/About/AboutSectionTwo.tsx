@@ -31,10 +31,7 @@ const AboutSectionTwo = () => {
                   Management Team
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  20+ Years of Tech Industry experience Government, BFSI &
-                  Health domain expertise Highly qualified business consultants
-                  Regulatory compliance expertise Program and strategy
-                  management Digital transformation Strategy & planning
+                  20+ Years of Cybersecurity Industry experience Government, BFSI & Health domain expertise Highly qualified security consultants Regulatory compliance expertise Program and strategy management Security transformation Strategy & planning
                 </p>
               </div>
               <div className="mb-9">
@@ -42,21 +39,15 @@ const AboutSectionTwo = () => {
                   Mid Management
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  10+ Years of Tech Industry experience Government, BFSI &
-                  Health domain expertise Business analysts Compliance planning
-                  & certification Project management System design & Blue
-                  printing Qualified professional certifications
+                  10+ Years of Cybersecurity Industry experience Government, BFSI & Health domain expertise Security analysts Compliance planning & certification Security project management Security architecture design & implementation Qualified professional certifications
                 </p>
               </div>
               <div className="mb-1">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Customer Enagement Team
+                  Customer Engagement Team
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  5+ Years of Tech Industry experience Government & Financial
-                  domain expertise Certified professional engineers Compliance
-                  planning Project execution and delivery System design & Blue
-                  printing
+                  5+ Years of Cybersecurity Industry experience Government & Financial domain expertise Certified security engineers Compliance planning Security project execution and delivery Security architecture design & implementation
                 </p>
               </div>
             </div>

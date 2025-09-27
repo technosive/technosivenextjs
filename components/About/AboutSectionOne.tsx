@@ -24,8 +24,8 @@ const AboutSectionOne = () => {
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="Excellence through Smart IoT Solutions."
-                paragraph="Pioneering solutions with in-house expertise in hardware, SaaS, and Big Data. As proprietors of the Orion IoT communications network, we provide clients with cutting-edge, end-to-end solutions tailored to their unique needs."
+                title="Excellence through Advanced Cybersecurity Solutions."
+                paragraph="Leading the frontier of digital protection with comprehensive cybersecurity expertise. As specialists in threat defense, security compliance, and digital asset protection, we provide organizations with cutting-edge solutions to safeguard their critical infrastructure and ensure robust security across all digital platforms."
                 mb="44px"
               />
 
@@ -35,19 +35,19 @@ const AboutSectionOne = () => {
               >
                 <div className="mx-[-12px] flex flex-wrap">
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Smart Building Management" />
-                    <List text="Smart Asset Tracking" />
-                    <List text="Smart Water Solutions" />
-                    <List text="Smart Utility Solutions" />
-                    <List text="Smart Community Management" />
+                    <List text="Network Security & Firewall Protection" />
+                    <List text="Threat Detection & Response Systems" />
+                    <List text="Security Information & Event Management" />
+                    <List text="Vulnerability Assessment & Penetration Testing" />
+                    <List text="Identity & Access Management Solutions" />
                   </div>
 
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Smart Security Solutions" />
-                    <List text="Connected Care Solutions" />
-                    <List text="Smart Marina Solutions" />
-                    <List text="Smart Leisure Utility Solutions" />
-                    <List text="Smart Wearable Solutions" />
+                    <List text="Cloud Security & Data Protection" />
+                    <List text="Compliance Management & Risk Assessment" />
+                    <List text="Security Awareness Training & Programs" />
+                    <List text="Incident Response & Recovery Services" />
+                    <List text="Security Architecture & Consulting" />
                   </div>
                 </div>
               </div>
